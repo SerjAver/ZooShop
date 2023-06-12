@@ -1,6 +1,6 @@
-
+//Styles
 import './App.css'
-import StyledMainsGrid from './Layout/styledMainGreed'
+import StyledMainsGrid from './Layout/styledMainGreed' //Components
 
 
 
