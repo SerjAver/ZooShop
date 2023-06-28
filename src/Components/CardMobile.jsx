@@ -18,6 +18,12 @@ const Price = styled.p`
   margin-bottom: 10px;
 `;
 
+const TypeFood = styled.p`
+font-size: 16px;
+  margin-bottom: 10px;
+  `
+
+
 const AddToCartButton = styled.button`
   background-color: #333;
   color: #fff;
@@ -32,6 +38,7 @@ const CardMobile = ({ product }) => {
     <Card>
       <Title>{product.name}</Title>
       <Price>{product.price}</Price>
+      <TypeFood>{product.typeFood}</TypeFood>
       <AddToCartButton>Add to Cart</AddToCartButton>
     </Card>
   );
