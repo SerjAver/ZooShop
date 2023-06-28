@@ -1,58 +1,38 @@
-import React from "react";
-import { styled } from "styled-components";
-import AddToCartButton from "../atoms/buttons";
-import Card from "../organics/Card";
+import React from 'react';
+import styled from 'styled-components';
+import productsData from '../JSON/animalProducts.json';
+import CardDesktop from '../Components/CardDesktop';
+import CardMobile from '../Components/CardMobile';
 
-const products = [
-  { id: 1, name: 'Dog food', price: 6 },
-  { id: 2, name: 'Cat food', price: 8 },
-  { id: 3, name: 'Hamster food', price: 3 },
-  { id: 4, name: 'Parrot food', price: 4 },
-  { id: 5, name: 'Lizard food', price: 15 },
-];
+const Container = styled.div`
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+`;
 
 const Grid = styled.div`
   display: grid;
-  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 
-  @media (min-width: 768px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  @media (min-width: 1200px) {
-    grid-template-columns: repeat(4, 1fr);
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
   }
 `;
 
-
-const Name = styled.h3`
-  font-size: 18px;
-  margin-bottom: 10px;
-`;
-
-const Price = styled.p`
-  font-size: 16px;
-  margin-bottom: 10px;
-`;
-
-const StyledMainsGrid = () => {
-  const handleAddToCart = (productId) => {
-    console.log(`Product with ID ${productId} was added to your cart`);
-  };
-
+const StyledMainGrid = () => {
   return (
-    <Grid>
-      {products.map((product) => (
-        <Card key={product.id}>
-          <Name>{product.name}</Name>
-          <Price>{`Price: $${product.price}`}</Price>
-          <AddToCartButton onClick={() => handleAddToCart(product.id)}>
-            Add to Cart
-          </AddToCartButton>
-        </Card>
-      ))}
-    </Grid>
+    <Container>
+      <Grid>
+        {productsData.map((product, index) => (
+          <React.Fragment key={index}>
+            <CardDesktop product={product} />
+            <CardMobile product={product} />
+          </React.Fragment>
+        ))}
+      </Grid>
+    </Container>
   );
 };
 
-export default StyledMainsGrid;
+export default StyledMainGrid;
