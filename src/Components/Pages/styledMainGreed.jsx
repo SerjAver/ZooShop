@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import productsData from '../JSON/animalProducts.json';
-import CardDesktop from '../Components/CardDesktop';
-import CardMobile from '../Components/CardMobile';
+import productsData from '../../JSON/animalProducts.json'
+
+//components
+import CardDesktop from '../Molecules/Card';
 
 const Container = styled.div`
   max-width: 1200px;
@@ -20,19 +21,16 @@ const Grid = styled.div`
   }
 `;
 
-const StyledMainGrid = () => {
+const MainGrid = () => {
   return (
     <Container>
       <Grid>
         {productsData.map((product, index) => (
-          <React.Fragment key={index}>
-            <CardDesktop product={product} />
-            <CardMobile product={product} />
-          </React.Fragment>
+            <CardDesktop key={index} product={product} />
         ))}
       </Grid>
     </Container>
   );
 };
 
-export default StyledMainGrid;
+export default MainGrid;

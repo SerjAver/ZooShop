@@ -1,15 +1,12 @@
-//Styles
-import { styled } from 'styled-components'
-import StyledMainsGrid from './Layout/styledMainGreed' //Components
+import MainGrid from "./Components/Pages/styledMainGreed";
 
 
-
-function App(props) {
+function App() {
 
   return (
-    <div>
-      <StyledMainsGrid />
-    </div>
+    <>
+      <MainGrid />
+    </>
   );
 };
 
