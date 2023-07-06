@@ -1,30 +1,21 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import { NavLink } from "react-router-dom";
 //styles
-import styled from 'styled-components';
-
+import styled from "styled-components";
 
 const StyledContactsButton = styled(NavLink)`
-  margin-right: 15px;
+margin-right: 15px;
   text-decoration: none;
   color: black;
   font-size: 20px;
-  position: relative;
-  left: 188px;
-  transform: translateX(-20px);
 
   &:hover {
     text-decoration: underline;
   }
 `;
 
-
-
 const ContactsButton = () => {
-    return (
-        <StyledContactsButton to="/contacts">Contacts</StyledContactsButton>
-    );
+  return <StyledContactsButton to="/contacts">Contacts</StyledContactsButton>;
 };
-
 
 export default ContactsButton;

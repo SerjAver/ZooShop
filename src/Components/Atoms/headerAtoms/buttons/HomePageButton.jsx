@@ -4,14 +4,12 @@ import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 const StyleNavLink = styled(NavLink)`
-  display: flex;
-  margin-right: 1px;
-  text-decoration: none;
-  color: black;
-  font-size: 20px;
-  position: relative;
-  left: -124px;
-  transform: translateX(-20px);
+display: flex;
+margin-right: 15px;
+text-decoration: none;
+color: black;
+font-size: 20px;
+ 
 
   &:hover {
     text-decoration: underline;
