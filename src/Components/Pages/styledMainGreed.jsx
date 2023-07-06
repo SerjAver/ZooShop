@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import productsData from '../../JSON/animalProducts.json'
 
 //components
-import CardDesktop from '../Molecules/Card';
+import Card from '../Molecules/Card';
 
 const Container = styled.div`
   max-width: 1200px;
@@ -26,7 +26,7 @@ const MainGrid = () => {
     <Container>
       <Grid>
         {productsData.map((product, index) => (
-            <CardDesktop key={index} product={product} />
+            <Card key={index} product={product} />
         ))}
       </Grid>
     </Container>

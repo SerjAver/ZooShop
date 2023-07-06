@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Card = styled.div`
+const CardDesktop = styled.div`
   background-color: #f9f9f9;
   padding: 20px;
   border-radius: 5px;
@@ -61,15 +61,15 @@ const AddToCartButtonM = styled.button`
 
 
 
-const CardDesktop = ({ product }) => {
+const Card = ({ product }) => {
   return (
     <>
-      <Card>
+      <CardDesktop>
         <Title>{product.name}</Title>
         <Price>{product.price}</Price>
         <TypeFood>{product.typeFood}</TypeFood>
         <AddToCartButton>Add to Cart</AddToCartButton>
-      </Card>
+      </CardDesktop>
       <CardM>
         <Title>{product.name}</Title>
         <Price>{product.price}</Price>
@@ -80,4 +80,4 @@ const CardDesktop = ({ product }) => {
   );
 };
 
-export default CardDesktop;
+export default Card;
