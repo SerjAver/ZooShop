@@ -21,15 +21,30 @@ const HeaderContainer = styled.header`
   }
 `;
 
+const Navigation = styled.nav`
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+`;
+
+const LogoWrapper = styled.div`
+  display: flex;
+  align-items: center;
+`;
 
 const Header = () => {
   return (
     <HeaderContainer>
-      <Logo />
-      <ButtonHomePage />
-      <InputSearch />
-      <ContactsButton />
-      <ShoppingCartButton />
+      <LogoWrapper>
+        <Logo />
+        <ButtonHomePage />
+        <InputSearch />
+      </LogoWrapper>
+      <Navigation>
+        <ContactsButton />
+        <ShoppingCartButton />
+      </Navigation>
     </HeaderContainer>
   );
 };
