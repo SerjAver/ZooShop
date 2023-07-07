@@ -1,7 +1,7 @@
 
 import { BrowserRouter } from "react-router-dom";
-import Header from "./Components/Organisms/Header";
-import MainGrid from "./Components/Pages/styledMainGreed";
+import Header from "./Components/organics/Header";
+import MainGrid from "./Components/otherPages/StyledMainGreed";
 
 
 function App() {

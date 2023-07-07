@@ -1,12 +1,13 @@
 import React from "react";
-import ButtonHomePage from "../Atoms/headerAtoms/buttons/HomePageButton";
-import ContactsButton from "../Atoms/headerAtoms/buttons/ContactsButton";
-import ShoppingCartButton from "../Atoms/headerAtoms/buttons/ShoppingCartButton";
-import InputSearch from "../Atoms/headerAtoms/inputs/InputSearch";
+// Components
+import ButtonHomePage from "../atomics/buttons/HomePageButton";
+import ContactsButton from "../atomics/buttons/ContactsButton";
+import ShoppingCartButton from "../atomics/buttons/ShoppingCartButton";
+import InputSearch from "../atomics/inputs/InputSearch";
 
 //styles
 import styled from "styled-components";
-import Logo from "../Atoms/headerAtoms/HeaderLogo/Logo";
+import Logo from "../atomics/Logo";
 
 const HeaderContainer = styled.header`
   display: flex;
