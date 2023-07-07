@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import productsData from '../../JSON/animalProducts.json'
 
 //components
-import Card from '../Molecules/Card';
+import Card from '../molecules/Card';
 
 const Container = styled.div`
   max-width: 1200px;
