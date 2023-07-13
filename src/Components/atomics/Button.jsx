@@ -10,8 +10,8 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
-const AddToCartButton = ({ onClick }) => {
-  return <Button onClick={onClick}>Add to Cart</Button>;
+const AddToCartButton = ({ onClick, children }) => {
+  return <Button onClick={onClick}>{children}</Button>;
 };
 
 export default AddToCartButton;

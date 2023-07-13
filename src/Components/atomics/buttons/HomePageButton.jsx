@@ -21,7 +21,7 @@ font-size: 20px;
 
 const ButtonHomePage = () => {
     return (
-        <StyleNavLink to="/">HomePage</StyleNavLink>
+        <StyleNavLink to="/HomePage">HomePage</StyleNavLink>
     );
 };
 

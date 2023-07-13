@@ -1,6 +1,8 @@
 import React from 'react';
 //styles
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+
 
 const Button = styled.button`
 background-color: #333;
@@ -14,7 +16,9 @@ cursor: pointer;
 
 const ShoppingCartButton = () => {
     return (
-        <Button>ToCart</Button>
+      <Link to="/cart">
+        <Button >ToCart</Button>
+      </Link>
     );
 };
 
