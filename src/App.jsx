@@ -1,19 +1,17 @@
-
+import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import Header from "./Components/organics/Header";
-import MainGrid from "./Components/otherPages/StyledMainGreed";
+//components
+import AppRouter from "./Components/organics/AppRouter";
 
 
 function App() {
-
   return (
     <>
-    <BrowserRouter>
-      <Header/>
-      <MainGrid />
-    </BrowserRouter>
+      <BrowserRouter>
+        <AppRouter />
+      </BrowserRouter>
     </>
   );
-};
+}
 
-export default App
+export default App;

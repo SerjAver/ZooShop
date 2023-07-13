@@ -21,12 +21,12 @@ const Grid = styled.div`
   }
 `;
 
-const MainGrid = () => {
+const MainGrid = ({ addToCart }) => {
   return (
     <Container>
       <Grid>
         {productsData.map((product, index) => (
-            <Card key={index} product={product} />
+            <Card key={index} product={product} addToCart={addToCart}/>
         ))}
       </Grid>
     </Container>
