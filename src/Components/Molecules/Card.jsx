@@ -61,20 +61,23 @@ const AddToCartButtonM = styled.button`
 
 
 
-const Card = ({ product }) => {
+const Card = ({ product, addToCart }) => {
+  const clickAddToCart = () => {
+    addToCart(product)
+  }
   return (
     <>
       <CardDesktop>
         <Title>{product.name}</Title>
         <Price>{product.price}</Price>
         <TypeFood>{product.typeFood}</TypeFood>
-        <AddToCartButton>Add to Cart</AddToCartButton>
+        <AddToCartButton onClick={clickAddToCart}>Add to Cart</AddToCartButton>
       </CardDesktop>
       <CardM>
         <Title>{product.name}</Title>
         <Price>{product.price}</Price>
         <TypeFood>{product.typeFood}</TypeFood>
-        <AddToCartButtonM>Add to Cart</AddToCartButtonM>
+        <AddToCartButtonM onClick={clickAddToCart}>Add to Cart</AddToCartButtonM>
       </CardM>
     </>
   );
