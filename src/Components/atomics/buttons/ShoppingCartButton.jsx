@@ -14,10 +14,10 @@ cursor: pointer;
   font-size: 20px;
 `;
 
-const ShoppingCartButton = () => {
+const ShoppingCartButton = ({onClick}) => {
     return (
       <Link to="/cart">
-        <Button >ToCart</Button>
+        <Button onClick={onClick}>ToCart</Button>
       </Link>
     );
 };

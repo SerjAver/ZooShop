@@ -12,6 +12,7 @@ const CardDesktop = styled.div`
     button {
       display: block;
     }
+    
   }
   `;
 
@@ -38,7 +39,12 @@ const AddToCartButton = styled.button`
   border-radius: 3px;
   cursor: pointer;
   display: none;
-  
+  &:hover {
+    background-color: red;
+  }
+  &:active {
+    transform: translateY(2px);
+  }
 `;
 
 const CardM = styled.div`
@@ -56,15 +62,22 @@ const AddToCartButtonM = styled.button`
   border: none;
   border-radius: 3px;
   cursor: pointer;
-
+  &:hover {
+    background-color: red;
+  }
+  &:active {
+    transform: translateY(2px);
+  }
 `;
+
 
 
 
 const Card = ({ product, addToCart }) => {
   const clickAddToCart = () => {
-    addToCart(product)
-  }
+    addToCart(product);
+  };
+
   return (
     <>
       <CardDesktop>
@@ -82,5 +95,4 @@ const Card = ({ product, addToCart }) => {
     </>
   );
 };
-
 export default Card;

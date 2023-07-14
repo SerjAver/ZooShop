@@ -1,9 +1,10 @@
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 //component
 import Card from '../molecules/Card';
 //styles
 import styled from 'styled-components';
+import AddToCartButton from '../atomics/Button';
 
 
 const CartContainer = styled.div`
@@ -24,22 +25,40 @@ const Total = styled.p`
 `;
 
 
+const CartPage = ({ cartItems }) => {
+  const total = cartItems.reduce((acc, item) => acc + item.price, 0);
+  const roundedTotal = total.toFixed(2);
+  const [cart, setCart] = useState(cartItems);
 
-const CartPage = ({cartItems}) => {
-    const total = cartItems.reduce((acc, item) => acc + item.price, 0);
+  const handleAddItem = (product) => {
+    setCart((prevCart) => [...prevCart, product]);
+  };
 
-    return (
-        <CartContainer>
-            <h1>Cart</h1>
-            <CartList>
-                {cartItems.map((item, index) => (
-                    <Card key={index} item={item}/>
-                ))}
-            </CartList>
-            <Total>Total: ${total}</Total>
-        </CartContainer>
-    );
+  const removeProductFromCart = (product) => {
+    setCart((prevCart) => prevCart.filter(i => i.id !== product.id));
+  };
+
+  const clearCart = () => {
+    setCart([]);
+  };
+  return (
+    <CartContainer>
+      <h1>Cart</h1>
+      {cartItems.map((item, index) => (
+        <div key={index}>
+          <h3>{item.name}</h3>
+          <p>{item.price}</p>
+          <button onClick={() => handleAddItem(item)}>+</button>
+          <button onClick={() => removeProductFromCart(item)}>-</button>
+        </div>
+      ))}
+      <Total>Total: ${roundedTotal}</Total>
+      <button onClick={() => clearCart()}>Clear cart</button>
+    </CartContainer>
+  );
 };
 
 
+
 export default CartPage;
+
