@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
+import cartIcon from '../../assets/Cart.png';
 
 const CardDesktop = styled.div`
   background-color: #f9f9f9;
@@ -36,7 +37,8 @@ const AddToCartButton = styled.button`
   color: #fff;
   padding: 8px 12px;
   border: none;
-  border-radius: 3px;
+  border-radius: 15px;
+  margin-right: 105px;
   cursor: pointer;
   display: none;
   &:hover {
@@ -60,7 +62,8 @@ const AddToCartButtonM = styled.button`
   color: #fff;
   padding: 8px 12px;
   border: none;
-  border-radius: 3px;
+  border-radius: 15px;
+  margin-right: 105px;
   cursor: pointer;
   &:hover {
     background-color: red;
@@ -72,10 +75,22 @@ const AddToCartButtonM = styled.button`
 
 
 
+const CartIcon = styled.img`
+  display: ${({ icon }) => (icon ? 'inline-block' : 'none')};
+  width: 24px;
+  height: 24px;
+  margin-right: 7px;
+  margin-top: 9px;
+`;
 
-const Card = ({ product, addToCart }) => {
+
+const Card = ({ product, addToCart, cartItems }) => {
+  const isInCart = cartItems.some((item) => item.productId === product.id);
+  const [icon, setDisplayIcon] = useState(isInCart);
+
   const clickAddToCart = () => {
     addToCart(product);
+    setDisplayIcon(true);
   };
 
   return (
@@ -84,15 +99,28 @@ const Card = ({ product, addToCart }) => {
         <Title>{product.name}</Title>
         <Price>{product.price}</Price>
         <TypeFood>{product.typeFood}</TypeFood>
-        <AddToCartButton onClick={clickAddToCart}>Add to Cart</AddToCartButton>
+        <AddToCartButton onClick={clickAddToCart}>
+          Add to Cart
+        </AddToCartButton>
+          {isInCart && icon && (
+            <CartIcon src={cartIcon} alt="Cart" icon="true" />
+          )}
       </CardDesktop>
       <CardM>
         <Title>{product.name}</Title>
         <Price>{product.price}</Price>
         <TypeFood>{product.typeFood}</TypeFood>
-        <AddToCartButtonM onClick={clickAddToCart}>Add to Cart</AddToCartButtonM>
+        <AddToCartButtonM onClick={clickAddToCart}>
+          Add to Cart
+        </AddToCartButtonM>
+          {isInCart && icon && (
+            <CartIcon src={cartIcon} alt="Cart" icon="true" />
+          )}
       </CardM>
     </>
   );
 };
+
 export default Card;
+
+
