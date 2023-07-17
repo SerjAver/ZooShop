@@ -21,44 +21,62 @@ const CartList = styled.div`
 
 const Total = styled.p`
   text-align: right;
-  margin-top: 20px;
+  margin-top: -35px;
+  font-size: 25px;
+  
 `;
 
+const MyButton = styled.button`
+background-color: #333;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 35px;
+  width: 118px;
+  margin-top: 20px;
+  &:hover {
+    background-color: red;
+  }
+  &:active {
+    transform: translateY(2px);
+  }
+  `
 
-const CartPage = ({ cartItems }) => {
+
+const CartPage = ({cartItems, addToCart, removeFromCart, handleClearCart}) => {
+
   const total = cartItems.reduce((acc, item) => acc + item.price, 0);
   const roundedTotal = total.toFixed(2);
-  const [cart, setCart] = useState(cartItems);
-
-  const handleAddItem = (product) => {
-    setCart((prevCart) => [...prevCart, product]);
+  const handleRemoveItem = (product) => {
+    removeFromCart(product);
   };
 
-  const removeProductFromCart = (product) => {
-    setCart((prevCart) => prevCart.filter(i => i.id !== product.id));
-  };
-
-  const clearCart = () => {
-    setCart([]);
-  };
+  
   return (
     <CartContainer>
       <h1>Cart</h1>
-      {cartItems.map((item, index) => (
-        <div key={index}>
-          <h3>{item.name}</h3>
-          <p>{item.price}</p>
-          <button onClick={() => handleAddItem(item)}>+</button>
-          <button onClick={() => removeProductFromCart(item)}>-</button>
-        </div>
-      ))}
-      <Total>Total: ${roundedTotal}</Total>
-      <button onClick={() => clearCart()}>Clear cart</button>
+      <CartList>
+        {cartItems.map((item, index) => (
+          <div key={index}>
+            <h3>{item.name}</h3>
+            <p>{item.price}</p>
+            <button onClick={() => addToCart(item)}>+</button>
+            <button onClick={() => handleRemoveItem(item)}>-</button>
+          </div>
+        ))}
+      </CartList>
+        <MyButton onClick={handleClearCart}>Clear cart</MyButton>
+        <Total>Total:${roundedTotal.toLocaleString()}</Total>
     </CartContainer>
   );
 };
 
-
-
 export default CartPage;
+
+
+
+
+
 
