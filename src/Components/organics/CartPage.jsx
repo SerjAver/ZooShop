@@ -1,10 +1,9 @@
 
-import React, { useEffect, useState } from 'react';
-//component
-import Card from '../molecules/Card';
+import React from 'react';
+
 //styles
 import styled from 'styled-components';
-import AddToCartButton from '../atomics/Button';
+
 
 
 const CartContainer = styled.div`
