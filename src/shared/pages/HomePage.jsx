@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import productsData from '../../JSON/animalProducts.json'
-
-//components
-import Card from '../molecules/Card';
+// JSON
+import productsData from '../../../animalProducts.json'
+// Components
+import { Card } from 'shared';
 
 const Container = styled.div`
   max-width: 1200px;
@@ -21,7 +21,7 @@ const Grid = styled.div`
   }
 `;
 
-const MainGrid = ({ addToCart, cartItems }) => {
+export const HomePage = ({ addToCart, cartItems }) => {
   return (
     <Container>
       <Grid>
@@ -32,5 +32,3 @@ const MainGrid = ({ addToCart, cartItems }) => {
     </Container>
   );
 };
-
-export default MainGrid;

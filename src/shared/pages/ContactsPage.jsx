@@ -1,5 +1,5 @@
 import React from 'react';
-//styles
+// Styles
 import styled from 'styled-components';
 
 const ContactContainer = styled.div`
@@ -8,19 +8,13 @@ const ContactContainer = styled.div`
   padding: 20px;
 `;
 
-
-
-const Contacts = () => {
+export const ContactsPage = () => {
     return (
         <ContactContainer>
           <h1>Contacts:</h1>
           <p> email: reactJS@gmail.com;</p>
           <p> adress: Kyiv, podol</p>
           <p> tel: +380950000000</p>
-           
         </ContactContainer>
     );
 };
-
-
-export default Contacts;

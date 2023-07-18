@@ -1,16 +1,14 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-//styles
+// Styles
 import styled from 'styled-components';
 
-const StyleNavLink = styled(NavLink)`
-display: flex;
-margin-right: 15px;
-text-decoration: none;
-color: black;
-font-size: 20px;
- 
-
+export const StyleNavLink = styled(NavLink)`
+  display: flex;
+  margin-right: 15px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
   &:hover {
     text-decoration: underline;
   }
@@ -19,11 +17,8 @@ font-size: 20px;
 
 
 
-const ButtonHomePage = () => {
+export const ButtonHomePage = () => {
     return (
         <StyleNavLink to="/HomePage">HomePage</StyleNavLink>
     );
 };
-
-
-export default ButtonHomePage;
