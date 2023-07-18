@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 // JSON
-import productsData from '../../../animalProducts.json'
+import productsData from '../../animalProducts.json'
 // Components
 import { Card } from 'shared';
 
