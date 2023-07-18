@@ -1,13 +1,8 @@
 import React from "react";
 // Components
-import ButtonHomePage from "../atomics/buttons/HomePageButton";
-import ContactsButton from "../atomics/buttons/ContactsButton";
-import ShoppingCartButton from "../atomics/buttons/ShoppingCartButton";
-import InputSearch from "../atomics/inputs/InputSearch";
-
-//styles
+import { ButtonHomePage, ContactsButton, ShoppingCartButton, InputSearch, Logo } from "shared";
+// Styles
 import styled from "styled-components";
-import Logo from "../atomics/Logo";
 
 const HeaderContainer = styled.header`
   display: flex;
@@ -34,7 +29,7 @@ const LogoWrapper = styled.div`
   align-items: center;
 `;
 
-const Header = () => {
+export const Header = () => {
   return (
     <HeaderContainer>
       <LogoWrapper>
@@ -49,5 +44,3 @@ const Header = () => {
     </HeaderContainer>
   );
 };
-
-export default Header;

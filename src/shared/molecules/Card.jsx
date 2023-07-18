@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
+// Assets
 import cartIcon from '../../assets/Cart.png';
+// Styles
+import styled from 'styled-components';
 
 const CardDesktop = styled.div`
   background-color: #f9f9f9;
@@ -84,7 +86,7 @@ const CartIcon = styled.img`
 `;
 
 
-const Card = ({ product, addToCart, cartItems }) => {
+export const Card = ({ product, addToCart, cartItems }) => {
   const isInCart = cartItems.some((item) => item.productId === product.id);
   const [icon, setDisplayIcon] = useState(isInCart);
 
@@ -120,7 +122,3 @@ const Card = ({ product, addToCart, cartItems }) => {
     </>
   );
 };
-
-export default Card;
-
-

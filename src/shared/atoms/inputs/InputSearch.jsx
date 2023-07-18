@@ -1,5 +1,5 @@
 import React from 'react';
-//styles
+// Styles
 import styled from 'styled-components';
 
 const SearchInput = styled.input`
@@ -17,11 +17,8 @@ flex-shrink: 0;
 `;
 
 
-const InputSearch = () => {
+export const InputSearch = () => {
     return (
         <SearchInput type="text" placeholder="Search" />
     );
 };
-
-
-export default InputSearch;

@@ -1,10 +1,7 @@
 
 import React from 'react';
-
-//styles
+// Styles
 import styled from 'styled-components';
-
-
 
 const CartContainer = styled.div`
   max-width: 1200px;
@@ -44,15 +41,13 @@ background-color: #333;
   `
 
 
-const CartPage = ({cartItems, addToCart, removeFromCart, handleClearCart}) => {
-
+export const CartPage = ({cartItems, addToCart, removeFromCart, handleClearCart}) => {
   const total = cartItems.reduce((acc, item) => acc + item.price, 0);
   const roundedTotal = total.toFixed(2);
   const handleRemoveItem = (product) => {
     removeFromCart(product);
   };
 
-  
   return (
     <CartContainer>
       <h1>Cart</h1>
@@ -71,11 +66,3 @@ const CartPage = ({cartItems, addToCart, removeFromCart, handleClearCart}) => {
     </CartContainer>
   );
 };
-
-export default CartPage;
-
-
-
-
-
-
