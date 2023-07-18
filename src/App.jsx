@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 // Components
-import { Header, HomePage, CartPage, ContactsPage }  from 'shared';
+import { Header }  from 'shared';
+import { HomePage, CartPage, ContactsPage } from 'pages'
+
 
 
 function App() {
