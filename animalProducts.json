@@ -1,5 +1,6 @@
 [
       {
+        "id": 1,
         "name": "Food for adult dogs ROYAL CANIN MEDIUM ADULT 15.0 kg",
         "class": "Super premium",
         "breed": "Medium",
@@ -10,6 +11,7 @@
         "countryOfOrigin": "France, Poland"
       },
       {
+        "id": 2,
         "name": "Hill's Science Diet Adult Dog Food",
         "class": "Premium",
         "breed": "All breeds",
@@ -20,6 +22,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 3,
         "name": "Acana Heritage Adult Dog Food",
         "class": "Super premium",
         "breed": "All breeds",
@@ -30,6 +33,7 @@
         "countryOfOrigin": "Canada"
       },
       {
+        "id": 4,
         "name": "Orijen Original Dog Food",
         "class": "Super premium",
         "breed": "All breeds",
@@ -40,6 +44,7 @@
         "countryOfOrigin": "Canada"
       },
       {
+        "id": 5,
         "name": "Taste of the Wild Grain-Free Dog Food",
         "class": "Premium",
         "breed": "All breeds",
@@ -50,6 +55,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 6,
         "name": "Blue Buffalo Life Protection Formula Dog Food",
         "class": "Premium",
         "breed": "All breeds",
@@ -60,6 +66,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 7,
         "name": "Merrick Grain-Free Dog Food",
         "class": "Super premium",
         "breed": "All breeds",
@@ -70,6 +77,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 8,
         "name": "Wellness CORE Grain-Free Dog Food",
         "class": "Super premium",
         "breed": "All breeds",
@@ -80,6 +88,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 9,
         "name": "Nutro Ultra Adult Dry Dog Food",
         "class": "Premium",
         "breed": "All breeds",
@@ -90,6 +99,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 10,
         "name": "Natural Balance L.I.D. Limited Ingredient Diets Dog Food",
         "class": "Premium",
         "breed": "All breeds",
@@ -100,6 +110,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 11,
         "name": "Iams ProActive Health Adult Dog Food",
         "class": "Premium",
         "breed": "All breeds",
@@ -110,6 +121,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 12,
         "name": "Purina ONE SmartBlend Natural Adult Dog Food",
         "class": "Premium",
         "breed": "All breeds",
@@ -120,6 +132,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 13,
         "name": "Pedigree Adult Dry Dog Food",
         "class": "Economy",
         "breed": "All breeds",
@@ -130,6 +143,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 14,
         "name": "Eukanuba Adult Dry Dog Food",
         "class": "Premium",
         "breed": "All breeds",
@@ -140,6 +154,7 @@
         "countryOfOrigin": "USA, EU"
       },
       {
+        "id": 15,
         "name": "Cesar Gourmet Wet Dog Food",
         "class": "Premium",
         "breed": "All breeds",
@@ -150,6 +165,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 16,
         "name": "Rachael Ray Nutrish Natural Wet Dog Food",
         "class": "Premium",
         "breed": "All breeds",
@@ -160,6 +176,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 17,
         "name": "Wellness Complete Health Natural Wet Dog Food",
         "class": "Premium",
         "breed": "All breeds",
@@ -170,6 +187,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 18,
         "name": "Merrick Grain-Free Wet Dog Food",
         "class": "Super premium",
         "breed": "All breeds",
@@ -180,6 +198,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 19,
         "name": "Nature's Recipe Grain-Free Wet Dog Food",
         "class": "Premium",
         "breed": "All breeds",
@@ -190,6 +209,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 20,
         "name": "Purina Beneful Wet Dog Food",
         "class": "Premium",
         "breed": "All breeds",
@@ -200,6 +220,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 21,
         "name": "Food for adult cats ROYAL CANIN ADULT 4.0 kg",
         "class": "Super premium",
         "breed": "All breeds",
@@ -210,6 +231,7 @@
         "countryOfOrigin": "France, Poland"
       },
       {
+        "id": 22,
         "name": "Hill's Science Diet Adult Cat Food",
         "class": "Premium",
         "breed": "All breeds",
@@ -220,6 +242,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 23,
         "name": "Purina Pro Plan Adult Cat Food",
         "class": "Premium",
         "breed": "All breeds",
@@ -230,6 +253,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 24,
         "name": "Blue Buffalo Wilderness High Protein Cat Food",
         "class": "Premium",
         "breed": "All breeds",
@@ -240,6 +264,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 25,
         "name": "Royal Canin Feline Health Nutrition Dry Cat Food",
         "class": "Premium",
         "breed": "All breeds",
@@ -250,6 +275,7 @@
         "countryOfOrigin": "France, Poland"
       },
       {
+        "id": 26,
         "name": "Iams ProActive Health Adult Cat Food",
         "class": "Premium",
         "breed": "All breeds",
@@ -260,6 +286,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 27,
         "name": "Wellness Complete Health Natural Dry Cat Food",
         "class": "Premium",
         "breed": "All breeds",
@@ -270,6 +297,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 28,
         "name": "Merrick Purrfect Bistro Grain-Free Dry Cat Food",
         "class": "Super premium",
         "breed": "All breeds",
@@ -280,6 +308,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 29,
         "name": "Nutro Wholesome Essentials Adult Dry Cat Food",
         "class": "Premium",
         "breed": "All breeds",
@@ -290,6 +319,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 30,
         "name": "Purina ONE Natural Dry Cat Food",
         "class": "Premium",
         "breed": "All breeds",
@@ -300,6 +330,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 31,
         "name": "Royal Canin Veterinary Diet Urinary SO Dry Cat Food",
         "class": "Super premium",
         "breed": "All breeds",
@@ -310,6 +341,7 @@
         "countryOfOrigin": "France, Poland"
       },
       {
+        "id": 32,
         "name": "Purina Fancy Feast Gourmet Wet Cat Food",
         "class": "Premium",
         "breed": "All breeds",
@@ -320,6 +352,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 33,
         "name": "Sheba Perfect Portions Grain-Free Wet Cat Food",
         "class": "Premium",
         "breed": "All breeds",
@@ -330,6 +363,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 34,
         "name": "Wellness CORE Grain-Free Wet Cat Food",
         "class": "Super premium",
         "breed": "All breeds",
@@ -340,6 +374,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 35,
         "name": "Merrick Purrfect Bistro Grain-Free Wet Cat Food",
         "class": "Super premium",
         "breed": "All breeds",
@@ -350,6 +385,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 36,
         "name": "Blue Buffalo Wilderness High Protein Wet Cat Food",
         "class": "Premium",
         "breed": "All breeds",
@@ -360,6 +396,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 37,
         "name": "Friskies Pate Wet Cat Food",
         "class": "Economy",
         "breed": "All breeds",
@@ -370,6 +407,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 38,
         "name": "Meow Mix Original Choice Dry Cat Food",
         "class": "Economy",
         "breed": "All breeds",
@@ -380,6 +418,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 39,
         "name": "Kaytee Forti-Diet Pro Health Parakeet Food",
         "class": "Premium",
         "species": "Parakeet",
@@ -390,6 +429,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 40,
         "name": "ZuPreem FruitBlend Flavor Pellets Bird Food",
         "class": "Premium",
         "species": "All birds",
@@ -400,6 +440,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 41,
         "name": "Harrison's Adult Lifetime Coarse Bird Food",
         "class": "Super premium",
         "species": "All birds",
@@ -410,6 +451,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 42,
         "name": "Lafeber's Classic Nutri-Berries Pet Bird Food",
         "class": "Premium",
         "species": "All birds",
@@ -420,6 +462,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 43,
         "name": "Roudybush Daily Maintenance Bird Food",
         "class": "Premium",
         "species": "All birds",
@@ -430,6 +473,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 44,
         "name": "Kaytee Fiesta Gourmet Variety Diet Bird Food",
         "class": "Premium",
         "species": "All birds",
@@ -440,6 +484,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 45,
         "name": "Volkman Avian Science Super Parrotlet Bird Food",
         "class": "Premium",
         "species": "Parrotlet",
@@ -450,6 +495,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 46,
         "name": "Higgins Vita Seed Parrot Food",
         "class": "Premium",
         "species": "Parrot",
@@ -460,6 +506,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 47,
         "name": "Lafeber's Premium Daily Diet Pellets Bird Food",
         "class": "Premium",
         "species": "All birds",
@@ -470,6 +517,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 48,
         "name": "Pretty Bird Daily Select Premium Bird Food",
         "class": "Premium",
         "species": "All birds",
@@ -480,6 +528,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 49,
         "name": "Nupro Dog Supplement",
         "type": "Vitamin and Supplement",
         "forBreedSize": "All breeds",
@@ -489,6 +538,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 50,
         "name": "Zesty Paws Omega Bites",
         "type": "Vitamin and Supplement",
         "forBreedSize": "All breeds",
@@ -498,6 +548,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 51,
         "name": "Nutramax Cosequin DS Plus MSM Chewable Tablets",
         "type": "Vitamin and Supplement",
         "forBreedSize": "All breeds",
@@ -507,6 +558,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 52,
         "name": "Glandex Dog & Cat Anal Gland Support Supplement",
         "type": "Vitamin and Supplement",
         "forBreedSize": "All breeds",
@@ -516,6 +568,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 53,
         "name": "VetriScience Laboratories Canine Plus Multivitamin",
         "type": "Vitamin and Supplement",
         "forBreedSize": "All breeds",
@@ -525,6 +578,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 54,
         "name": "PetHonesty 10-in-1 Multivitamin with Glucosamine",
         "type": "Vitamin and Supplement",
         "forBreedSize": "All breeds",
@@ -534,6 +588,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 55,
         "name": "Nature's Bounty Fish Oil",
         "type": "Vitamin and Supplement",
         "forBreedSize": "All breeds",
@@ -543,6 +598,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 56,
         "name": "ProSense Multivitamin for All Life Stages",
         "type": "Vitamin and Supplement",
         "forBreedSize": "All breeds",
@@ -552,6 +608,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 57,
         "name": "Nutri-Vet Senior-Vite Chewables for Senior Dogs",
         "type": "Vitamin and Supplement",
         "forBreedSize": "Senior dogs",
@@ -561,6 +618,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 58,
         "name": "Pet Naturals of Vermont Daily Probiotic for Dogs",
         "type": "Vitamin and Supplement",
         "forBreedSize": "All breeds",
@@ -570,6 +628,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 59,
         "name": "NaturVet All-in-One 4-in-1 Support for Dogs",
         "type": "Vitamin and Supplement",
         "forBreedSize": "All breeds",
@@ -579,6 +638,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 60,
         "name": "The Missing Link Original All-Natural Superfood Dog Supplement",
         "type": "Vitamin and Supplement",
         "forBreedSize": "All breeds",
@@ -588,6 +648,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 61,
         "name": "Ark Naturals Brushless Toothpaste for Dogs",
         "type": "Vitamin and Supplement",
         "forBreedSize": "All breeds",
@@ -597,6 +658,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 62,
         "name": "Vet's Best Aspirin Free Aches + Pains Dog Supplement",
         "type": "Vitamin and Supplement",
         "forBreedSize": "All breeds",
@@ -606,6 +668,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 63,
         "name": "Hill's Prescription Diet j/d Joint Care Dog Food",
         "type": "Vitamin and Supplement",
         "forBreedSize": "All breeds",
@@ -615,6 +678,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 64,
         "name": "VetriScience Laboratories GlycoFlex Plus Joint Support Dog Supplement",
         "type": "Vitamin and Supplement",
         "forBreedSize": "All breeds",
@@ -624,6 +688,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 65,
         "name": "NaturVet Hemp Joint Health Dog Soft Chews",
         "type": "Vitamin and Supplement",
         "forBreedSize": "All breeds",
@@ -633,6 +698,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 66,
         "name": "ProSense Advanced Strength Glucosamine Chew Tablets for Dogs",
         "type": "Vitamin and Supplement",
         "forBreedSize": "All breeds",
@@ -642,6 +708,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 67,
         "name": "Nupro Joint & Immunity Support Dog Supplement",
         "type": "Vitamin and Supplement",
         "forBreedSize": "All breeds",
@@ -651,6 +718,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 68,
         "name": "Vet's Best Gas Busters Dog Supplement",
         "type": "Vitamin and Supplement",
         "forBreedSize": "All breeds",
@@ -660,6 +728,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 69,
         "name": "Frontline Plus Flea and Tick Treatment",
         "type": "Flea and Tick Control",
         "forBreedSize": "All breeds",
@@ -670,6 +739,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 70,
         "name": "Advantix II Flea and Tick Control for Dogs",
         "type": "Flea and Tick Control",
         "forBreedSize": "All breeds",
@@ -680,6 +750,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 71,
         "name": "Seresto Flea and Tick Collar",
         "type": "Flea and Tick Control",
         "forBreedSize": "All breeds",
@@ -690,6 +761,7 @@
         "countryOfOrigin": "Germany"
       },
       {
+        "id": 72,
         "name": "K9 Advantix II Flea and Tick Treatment",
         "type": "Flea and Tick Control",
         "forBreedSize": "All breeds",
@@ -700,6 +772,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 73,
         "name": "NexGard Chewables Flea and Tick Control",
         "type": "Flea and Tick Control",
         "forBreedSize": "All breeds",
@@ -710,6 +783,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 74,
         "name": "Bravecto Chewable Flea and Tick Treatment",
         "type": "Flea and Tick Control",
         "forBreedSize": "All breeds",
@@ -720,6 +794,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 75,
         "name": "Frontline Spray Flea and Tick Treatment",
         "type": "Flea and Tick Control",
         "forBreedSize": "All breeds",
@@ -730,6 +805,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 76,
         "name": "Advantage II Flea Treatment for Dogs",
         "type": "Flea Control",
         "forBreedSize": "All breeds",
@@ -740,6 +816,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 77,
         "name": "Hartz UltraGuard Plus Flea and Tick Treatment",
         "type": "Flea and Tick Control",
         "forBreedSize": "All breeds",
@@ -750,6 +827,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 78,
         "name": "Sentry Fiproguard Plus Flea and Tick Treatment",
         "type": "Flea and Tick Control",
         "forBreedSize": "All breeds",
@@ -760,6 +838,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 79,
         "name": "Adams Plus Flea and Tick Shampoo",
         "type": "Flea and Tick Control",
         "forBreedSize": "All breeds",
@@ -770,6 +849,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 80,
         "name": "PetArmor Plus Flea and Tick Treatment",
         "type": "Flea and Tick Control",
         "forBreedSize": "All breeds",
@@ -780,6 +860,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 81,
         "name": "Capstar Fast-Acting Oral Flea Treatment",
         "type": "Flea Treatment",
         "forBreedSize": "All breeds",
@@ -790,6 +871,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 82,
         "name": "Vet's Best Flea and Tick Home Spray",
         "type": "Flea and Tick Control",
         "forBreedSize": "All breeds",
@@ -800,6 +882,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 83,
         "name": "BioSpot Active Care Flea and Tick Spot On",
         "type": "Flea and Tick Control",
         "forBreedSize": "All breeds",
@@ -810,6 +893,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 84,
         "name": "Sentry Flea and Tick Collar",
         "type": "Flea and Tick Control",
         "forBreedSize": "All breeds",
@@ -820,6 +904,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 85,
         "name": "Frontline Gold Flea and Tick Treatment",
         "type": "Flea and Tick Control",
         "forBreedSize": "All breeds",
@@ -830,6 +915,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 86,
         "name": "Seresto Flea and Tick Spray",
         "type": "Flea and Tick Control",
         "forBreedSize": "All breeds",
@@ -840,6 +926,7 @@
         "countryOfOrigin": "Germany"
       },
       {
+        "id": 87,
         "name": "Adams Flea and Tick Collar",
         "type": "Flea and Tick Control",
         "forBreedSize": "All breeds",
@@ -850,6 +937,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 88,
         "name": "Natural Chemistry Flea and Tick Shampoo",
         "type": "Flea and Tick Control",
         "forBreedSize": "All breeds",
@@ -860,6 +948,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 89,
         "name": "Hartz UltraGuard Pro Flea and Tick Treatment",
         "type": "Flea and Tick Control",
         "forBreedSize": "All breeds",
@@ -870,6 +959,7 @@
         "countryOfOrigin": "USA"
       },
       {
+        "id": 90,
         "name": "Basket-style Dog Muzzle",
         "category": "Muzzle",
         "size": "Small",
@@ -879,6 +969,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 91,
         "name": "Mesh Dog Muzzle",
         "category": "Muzzle",
         "size": "Medium",
@@ -888,6 +979,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 92,
         "name": "Adjustable Leather Dog Muzzle",
         "category": "Muzzle",
         "size": "Large",
@@ -897,6 +989,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 93,
         "name": "Plastic Dog Muzzle",
         "category": "Muzzle",
         "size": "Small",
@@ -906,6 +999,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 94,
         "name": "Wire Dog Muzzle",
         "category": "Muzzle",
         "size": "Medium",
@@ -915,6 +1009,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 95,
         "name": "Soft Silicone Dog Muzzle",
         "category": "Muzzle",
         "size": "Small",
@@ -924,6 +1019,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 96,
         "name": "Baskerville Ultra Dog Muzzle",
         "category": "Muzzle",
         "size": "Large",
@@ -933,6 +1029,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 97,
         "name": "Neoprene Padded Dog Muzzle",
         "category": "Muzzle",
         "size": "Medium",
@@ -942,6 +1039,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 98,
         "name": "Short Snout Dog Muzzle",
         "category": "Muzzle",
         "size": "Small",
@@ -951,6 +1049,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 99,
         "name": "Leather Basket Dog Muzzle",
         "category": "Muzzle",
         "size": "Large",
@@ -960,6 +1059,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 100,
         "name": "Oatmeal Dog Shampoo",
         "category": "Shampoo",
         "type": "Oatmeal",
@@ -969,6 +1069,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 101,
         "name": "Hypoallergenic Dog Shampoo",
         "category": "Shampoo",
         "type": "Hypoallergenic",
@@ -978,6 +1079,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 102,
         "name": "Coconut Oil Dog Shampoo",
         "category": "Shampoo",
         "type": "Coconut Oil",
@@ -987,6 +1089,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 103,
         "name": "Medicated Dog Shampoo",
         "category": "Shampoo",
         "type": "Medicated",
@@ -996,6 +1099,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 104,
         "name": "Puppy Shampoo",
         "category": "Shampoo",
         "type": "Gentle",
@@ -1005,6 +1109,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 105,
         "name": "Detangling Dog Conditioner",
         "category": "Conditioner",
         "type": "Detangling",
@@ -1014,6 +1119,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 106,
         "name": "Whitening Dog Shampoo",
         "category": "Shampoo",
         "type": "Whitening",
@@ -1023,6 +1129,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 107,
         "name": "Leave-In Dog Conditioner",
         "category": "Conditioner",
         "type": "Leave-In",
@@ -1032,6 +1139,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 108,
         "name": "Flea and Tick Shampoo",
         "category": "Shampoo",
         "type": "Flea and Tick",
@@ -1041,6 +1149,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 109,
         "name": "Dry Dog Shampoo",
         "category": "Shampoo",
         "type": "Dry",
@@ -1050,6 +1159,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 110,
         "name": "Deodorizing Dog Spray",
         "category": "Spray",
         "type": "Deodorizing",
@@ -1059,6 +1169,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 111,
         "name": "Tearless Dog Shampoo",
         "category": "Shampoo",
         "type": "Tearless",
@@ -1068,6 +1179,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 112,
         "name": "Soothing Dog Shampoo",
         "category": "Shampoo",
         "type": "Soothing",
@@ -1077,6 +1189,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 113,
         "name": "Leave-In Detangler Spray",
         "category": "Spray",
         "type": "Detangler",
@@ -1086,6 +1199,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 114,
         "name": "Waterless Foam Dog Shampoo",
         "category": "Shampoo",
         "type": "Waterless",
@@ -1095,6 +1209,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 115,
         "name": "Silk Coat Conditioner",
         "category": "Conditioner",
         "type": "Silk Coat",
@@ -1104,6 +1219,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 116,
         "name": "Mild Puppy Shampoo",
         "category": "Shampoo",
         "type": "Gentle",
@@ -1113,6 +1229,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 117,
         "name": "Stain and Odor Remover",
         "category": "Cleaner",
         "type": "Stain and Odor",
@@ -1122,6 +1239,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 118,
         "name": "Anti-Itch Dog Shampoo",
         "category": "Shampoo",
         "type": "Anti-Itch",
@@ -1131,6 +1249,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 119,
         "name": "Dental Water Additive",
         "category": "Dental Care",
         "type": "Water Additive",
@@ -1140,6 +1259,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 120,
         "name": "Clumping Cat Litter",
         "category": "Litter",
         "type": "Clumping",
@@ -1149,6 +1269,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 121,
         "name": "Silica Gel Cat Litter",
         "category": "Litter",
         "type": "Silica Gel",
@@ -1158,6 +1279,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 122,
         "name": "Natural Wood Pellet Cat Litter",
         "category": "Litter",
         "type": "Wood Pellet",
@@ -1167,6 +1289,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 123,
         "name": "Paper Cat Litter",
         "category": "Litter",
         "type": "Paper",
@@ -1176,6 +1299,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 124,
         "name": "Natural Corn Cat Litter",
         "category": "Litter",
         "type": "Corn",
@@ -1185,6 +1309,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 125,
         "name": "Crystal Cat Litter",
         "category": "Litter",
         "type": "Crystal",
@@ -1194,6 +1319,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 126,
         "name": "Scented Pine Cat Litter",
         "category": "Litter",
         "type": "Pine",
@@ -1203,6 +1329,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 127,
         "name": "Walnut Shell Cat Litter",
         "category": "Litter",
         "type": "Walnut Shell",
@@ -1212,6 +1339,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 128,
         "name": "Plant-Based Cat Litter",
         "category": "Litter",
         "type": "Plant-Based",
@@ -1221,6 +1349,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 129,
         "name": "Multi-Cat Clumping Litter",
         "category": "Litter",
         "type": "Clumping",
@@ -1230,6 +1359,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 130,
         "name": "Bamboo Cat Litter",
         "category": "Litter",
         "type": "Bamboo",
@@ -1239,6 +1369,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 131,
         "name": "Odor Control Cat Litter",
         "category": "Litter",
         "type": "Odor Control",
@@ -1248,6 +1379,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 132,
         "name": "Recycled Paper Cat Litter",
         "category": "Litter",
         "type": "Recycled Paper",
@@ -1257,6 +1389,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 133,
         "name": "Flushable Cat Litter",
         "category": "Litter",
         "type": "Flushable",
@@ -1266,6 +1399,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 134,
         "name": "Tofu Cat Litter",
         "category": "Litter",
         "type": "Tofu",
@@ -1275,6 +1409,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 135,
         "name": "Non-Clumping Cat Litter",
         "category": "Litter",
         "type": "Non-Clumping",
@@ -1284,6 +1419,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 136,
         "name": "Pine Pellet Cat Litter",
         "category": "Litter",
         "type": "Pine Pellet",
@@ -1293,6 +1429,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 137,
         "name": "Activated Carbon Cat Litter",
         "category": "Litter",
         "type": "Activated Carbon",
@@ -1302,6 +1439,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 138,
         "name": "Scoopable Cat Litter",
         "category": "Litter",
         "type": "Scoopable",
@@ -1311,6 +1449,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 139,
         "name": "Natural Grass Cat Litter",
         "category": "Litter",
         "type": "Natural Grass",
@@ -1320,6 +1459,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 140,
         "name": "Large Metal Bird Cage",
         "category": "Bird Cage",
         "type": "Metal",
@@ -1329,6 +1469,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 141,
         "name": "Portable Travel Bird Cage",
         "category": "Bird Cage",
         "type": "Portable",
@@ -1338,6 +1479,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 142,
         "name": "Wooden Bird Cage",
         "category": "Bird Cage",
         "type": "Wooden",
@@ -1347,6 +1489,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 143,
         "name": "Flight Cage with Stand",
         "category": "Bird Cage",
         "type": "Flight Cage",
@@ -1356,6 +1499,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 144,
         "name": "Acrylic Bird Cage",
         "category": "Bird Cage",
         "type": "Acrylic",
@@ -1365,6 +1509,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 145,
         "name": "Breeder Bird Cage",
         "category": "Bird Cage",
         "type": "Breeder",
@@ -1374,6 +1519,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 146,
         "name": "Dome Top Bird Cage",
         "category": "Bird Cage",
         "type": "Dome Top",
@@ -1383,6 +1529,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 147,
         "name": "Wrought Iron Bird Cage",
         "category": "Bird Cage",
         "type": "Wrought Iron",
@@ -1392,6 +1539,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 148,
         "name": "Hanging Bird Cage",
         "category": "Bird Cage",
         "type": "Hanging",
@@ -1401,6 +1549,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 149,
         "name": "Stackable Bird Cage",
         "category": "Bird Cage",
         "type": "Stackable",
@@ -1410,6 +1559,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 150,
         "name": "Flea and Tick Collar for Cats",
         "category": "Flea & Tick",
         "type": "Collar",
@@ -1419,6 +1569,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 151,
         "name": "Flea and Tick Spot-On Treatment for Cats",
         "category": "Flea & Tick",
         "type": "Spot-On",
@@ -1428,6 +1579,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 152,
         "name": "Flea and Tick Shampoo for Cats",
         "category": "Flea & Tick",
         "type": "Shampoo",
@@ -1437,6 +1589,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 153,
         "name": "Flea and Tick Spray for Cats",
         "category": "Flea & Tick",
         "type": "Spray",
@@ -1446,6 +1599,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 154,
         "name": "Flea and Tick Powder for Cats",
         "category": "Flea & Tick",
         "type": "Powder",
@@ -1455,6 +1609,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 155,
         "name": "Flea and Tick Wipes for Cats",
         "category": "Flea & Tick",
         "type": "Wipes",
@@ -1464,6 +1619,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 156,
         "name": "Flea and Tick Oral Treatment for Cats",
         "category": "Flea & Tick",
         "type": "Oral",
@@ -1473,6 +1629,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 157,
         "name": "Flea and Tick Collar for Kittens",
         "category": "Flea & Tick",
         "type": "Collar",
@@ -1482,6 +1639,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 158,
         "name": "Flea and Tick Spray for Kittens",
         "category": "Flea & Tick",
         "type": "Spray",
@@ -1491,6 +1649,7 @@
         "date": "2023-06-28"
       },
       {
+        "id": 159,
         "name": "Flea and Tick Shampoo for Kittens",
         "category": "Flea & Tick",
         "type": "Shampoo",
