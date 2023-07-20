@@ -8,9 +8,19 @@ import { HomePage, CartPage, ContactsPage } from 'pages'
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
+
   const addToCart = (product) => {
-    setCartItems((prevItems) => [...prevItems, product]);
+    const existingItemIndex = cartItems.findIndex((item) => item.name === product.name);
+    if (existingItemIndex !== -1) {
+      const updatedItems = [...cartItems];
+      updatedItems[existingItemIndex].quantity += 1;
+      setCartItems(updatedItems);
+    } else {
+      setCartItems((prevItems) => [...prevItems, { ...product, quantity: 1 }]);
+    }
   };
+
+
 
   useEffect(() => {
     const storedCartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
@@ -21,17 +31,26 @@ function App() {
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
   }, [cartItems]);
   
+
+ 
   const removeFromCart = (product) => {
     setCartItems((prevItems) => {
-      const index = prevItems.findIndex(item => item === product);
-      if (index !== -1) {
-        const updatedItems = [...prevItems];
-        updatedItems.splice(index, 1);
-        return updatedItems;
-      }
-      return prevItems;
+      const updatedItems = prevItems.map((item) => {
+        if (item.name === product.name) {
+          if (item.quantity > 0) {
+            
+            return { ...item, quantity: item.quantity - 1 };
+          }
+        }
+        return item;
+      });
+  
+      return updatedItems.filter((item) => item.quantity > 0);
     });
   };
+
+
+ 
 
   const handleClearCart = () => {
     setCartItems([]);

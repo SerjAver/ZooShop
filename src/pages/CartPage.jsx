@@ -33,21 +33,48 @@ background-color: #333;
   width: 118px;
   margin-top: 20px;
   &:hover {
-    background-color: red;
+    background-color: teal;
   }
   &:active {
     transform: translateY(2px);
   }
   `
 
+  const AddButton = styled.button`
+  background-color: #333;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 35px;
+  width: 37px;
+  margin-top: 10px;
+  &:hover {
+    background-color: teal;
+  }
+  &:active {
+    transform: translateY(2px);
+  }
+  `
+
+  const ItemQuantity = styled.div`
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: green
+  
+  `
+
 
 export const CartPage = ({cartItems, addToCart, removeFromCart, handleClearCart}) => {
-  const total = cartItems.reduce((acc, item) => acc + item.price, 0);
+  const total = cartItems.reduce((acc, item) => acc + (item.quantity * item.price), 0);
   const roundedTotal = total.toFixed(2);
   const handleRemoveItem = (product) => {
     removeFromCart(product);
   };
-
+  
+  
   return (
     <CartContainer>
       <h1>Cart</h1>
@@ -56,8 +83,10 @@ export const CartPage = ({cartItems, addToCart, removeFromCart, handleClearCart}
           <div key={index}>
             <h3>{item.name}</h3>
             <p>{item.price}</p>
-            <button onClick={() => addToCart(item)}>+</button>
-            <button onClick={() => handleRemoveItem(item)}>-</button>
+            <AddButton onClick={() => addToCart(item)}>+</AddButton>
+            <AddButton onClick={() => handleRemoveItem(item)}>-</AddButton>
+            <ItemQuantity>{item.quantity}</ItemQuantity>
+            <div>{(item.quantity * item.price).toFixed(2)}</div>
           </div>
         ))}
       </CartList>
