@@ -42,7 +42,7 @@ const AddToCartButton = styled.button`
   border-radius: 15px;
   margin-right: 105px;
   cursor: pointer;
-  display: none;
+  display: block;
   &:hover {
     background-color: red;
   }
@@ -50,35 +50,10 @@ const AddToCartButton = styled.button`
     transform: translateY(2px);
   }
 `;
-
-const CardM = styled.div`
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 5px;
-  transition: box-shadow 0.3s;
-  
-`;
-
-const AddToCartButtonM = styled.button`
-  background-color: #333;
-  color: #fff;
-  padding: 8px 12px;
-  border: none;
-  border-radius: 15px;
-  margin-right: 105px;
-  cursor: pointer;
-  &:hover {
-    background-color: red;
-  }
-  &:active {
-    transform: translateY(2px);
-  }
-`;
-
 
 
 const CartIcon = styled.img`
-  display: ${({ icon }) => (icon ? 'inline-block' : 'none')};
+  
   width: 24px;
   height: 24px;
   margin-right: 7px;
@@ -87,12 +62,12 @@ const CartIcon = styled.img`
 
 
 export const Card = ({ product, addToCart, cartItems }) => {
-  const isInCart = cartItems.some((item) => item.productId === product.id);
-  const [icon, setDisplayIcon] = useState(isInCart);
+  const isInCart = cartItems.some((item) => item.id === product.id);
+  const [icon, setIcon] = useState(isInCart);
 
   const clickAddToCart = () => {
     addToCart(product);
-    setDisplayIcon(true);
+    setIcon(true);
   };
 
   return (
@@ -108,17 +83,6 @@ export const Card = ({ product, addToCart, cartItems }) => {
             <CartIcon src={cartIcon} alt="Cart" icon="true" />
           )}
       </CardDesktop>
-      <CardM>
-        <Title>{product.name}</Title>
-        <Price>{product.price}</Price>
-        <TypeFood>{product.typeFood}</TypeFood>
-        <AddToCartButtonM onClick={clickAddToCart}>
-          Add to Cart
-        </AddToCartButtonM>
-          {isInCart && icon && (
-            <CartIcon src={cartIcon} alt="Cart" icon="true" />
-          )}
-      </CardM>
     </>
   );
 };
