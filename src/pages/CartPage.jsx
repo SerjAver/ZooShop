@@ -13,16 +13,20 @@ const CartList = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
+  min-width: 220px;
+  min-height: 69px; 
+
 `;
 
 const Total = styled.p`
   text-align: right;
   margin-top: -35px;
   font-size: 25px;
+
   
 `;
 
-const MyButton = styled.button`
+const ClearButton = styled.button`
 background-color: #333;
   color: #fff;
   padding: 8px 12px;
@@ -33,21 +37,18 @@ background-color: #333;
   width: 118px;
   margin-top: 20px;
   &:hover {
-    background-color: teal;
+    background-color: red;
   }
   &:active {
     transform: translateY(2px);
-  }
-  `
+  }`
 
-  const AddButton = styled.button`
-  background-color: #333;
-  color: #fff;
-  padding: 8px 12px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  height: 35px;
+  const ButtonContainer = styled.div`
+  display: flex;
+  gap: 10px;
+  `;
+
+  const AddButton = styled(ClearButton)`
   width: 37px;
   margin-top: 10px;
   &:hover {
@@ -58,6 +59,12 @@ background-color: #333;
   }
   `
 
+  const RedButton = styled(AddButton)`
+  &:hover {
+    background-color: red;
+  }
+  `;
+
   const ItemQuantity = styled.div`
   font-size: 25px;
   margin-top: 10px;
@@ -65,6 +72,12 @@ background-color: #333;
   color: green
   
   `
+  const ImgComponent = styled.img`
+  width: 235px;
+  height: 267px;
+  margin-right: 1px;
+  margin-top: 3px;
+`;
 
 
 export const CartPage = ({cartItems, addToCart, removeFromCart, handleClearCart}) => {
@@ -73,24 +86,25 @@ export const CartPage = ({cartItems, addToCart, removeFromCart, handleClearCart}
   const handleRemoveItem = (product) => {
     removeFromCart(product);
   };
-  
-  
   return (
     <CartContainer>
       <h1>Cart</h1>
-      <CartList>
+      <CartList>  
         {cartItems.map((item, index) => (
           <div key={index}>
-            <h3>{item.name}</h3>
+           <h3 style={{ minWidth: 220, minHeight: 69 }}>{item.name}</h3>
+           <ImgComponent src={item.photo} alt={item.name}/>
             <p>{item.price}</p>
-            <AddButton onClick={() => addToCart(item)}>+</AddButton>
-            <AddButton onClick={() => handleRemoveItem(item)}>-</AddButton>
+            <ButtonContainer>
+              <AddButton onClick={() => addToCart(item)}>+</AddButton>
+              <RedButton onClick={() => handleRemoveItem(item)}>-</RedButton>
+            </ButtonContainer>
             <ItemQuantity>{item.quantity}</ItemQuantity>
             <div>{(item.quantity * item.price).toFixed(2)}</div>
           </div>
         ))}
       </CartList>
-        <MyButton onClick={handleClearCart}>Clear cart</MyButton>
+        <ClearButton onClick={handleClearCart}>Clear cart</ClearButton>
         <Total>Total:${roundedTotal.toLocaleString()}</Total>
     </CartContainer>
   );

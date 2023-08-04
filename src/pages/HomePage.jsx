@@ -13,21 +13,24 @@ const Container = styled.div`
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(4, minmax(250px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-
+  
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
   }
 `;
 
 export const HomePage = ({ addToCart, cartItems }) => {
+
   return (
     <Container>
+
       <Grid>
         {productsData.map((product, index) => (
             <Card key={index} product={product} addToCart={addToCart} cartItems={cartItems} />
-        ))}
+            ))}
       </Grid>
     </Container>
   );
