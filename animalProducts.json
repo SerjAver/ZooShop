@@ -8,7 +8,8 @@
         "price": 13.5,
         "date": "2023-06-28",
         "typeFood": "Dogfood",
-        "countryOfOrigin": "France, Poland"
+        "countryOfOrigin": "France, Poland",
+        "photo": "https://www.puprise.com/wp-content/uploads/2017/10/Royal-Canin-Medium-Adult-7-Dry-Dog-Food.jpg"
       },
       {
         "id": 2,
@@ -19,7 +20,8 @@
         "price": 18.99,
         "date": "2023-06-28",
         "typeFood": "Dogfood",
-        "countryOfOrigin": "USA"
+        "countryOfOrigin": "USA",
+        "photo": "https://cdn.tabletki.ua/_images/goods/24500cc0-52b1-11ec-bacd-0050569aacb6/1/AAAAAAkUfGI/img_original_0.jpg"
       },
       {
         "id": 3,
@@ -30,7 +32,8 @@
         "price": 26.5,
         "date": "2023-06-28",
         "typeFood": "Dogfood",
-        "countryOfOrigin": "Canada"
+        "countryOfOrigin": "Canada",
+        "photo": "https://content1.rozetka.com.ua/goods/images/big/221770570.jpg"
       },
       {
         "id": 4,
@@ -41,7 +44,8 @@
         "price": 32.99,
         "date": "2023-06-28",
         "typeFood": "Dogfood",
-        "countryOfOrigin": "Canada"
+        "countryOfOrigin": "Canada",
+        "photo": "https://content2.rozetka.com.ua/goods/images/big/341391723.jpg"
       },
       {
         "id": 5,
@@ -52,7 +56,8 @@
         "price": 29.75,
         "date": "2023-06-28",
         "typeFood": "Dogfood",
-        "countryOfOrigin": "USA"
+        "countryOfOrigin": "USA",
+        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC_1sR_uhwOOsNN68WOH4ZCTjCaedIF2Q3TQ&usqp=CAU"
       },
       {
         "id": 6,
@@ -63,7 +68,8 @@
         "price": 24.99,
         "date": "2023-06-28",
         "typeFood": "Dogfood",
-        "countryOfOrigin": "USA"
+        "countryOfOrigin": "USA",
+        "photo": "https://i5.walmartimages.com/asr/f532933d-38dd-40be-a3f8-b4bec1b33668.09af0e2cbefc68cd30b77e32f88ed71c.jpeg"
       },
       {
         "id": 7,
@@ -74,7 +80,8 @@
         "price": 31.25,
         "date": "2023-06-28",
         "typeFood": "Dogfood",
-        "countryOfOrigin": "USA"
+        "countryOfOrigin": "USA",
+        "photo": "https://m.media-amazon.com/images/I/81ZjCB59CxL._AC_UF1000,1000_QL80_.jpg"
       },
       {
         "id": 8,
@@ -85,7 +92,8 @@
         "price": 27.99,
         "date": "2023-06-28",
         "typeFood": "Dogfood",
-        "countryOfOrigin": "USA"
+        "countryOfOrigin": "USA",
+        "photo": "https://wellnesscore.eu/wp-content/uploads/2022/01/10813.MAIN_-1.png"
       },
       {
         "id": 9,
@@ -96,7 +104,8 @@
         "price": 22.75,
         "date": "2023-06-28",
         "typeFood": "Dogfood",
-        "countryOfOrigin": "USA"
+        "countryOfOrigin": "USA",
+        "photo": "https://www.jakespetsupply.com/cdn/shop/products/ultra-holistic-dry-food-kibble_x700.jpg?v=1519651199"
       },
       {
         "id": 10,
@@ -107,117 +116,8 @@
         "price": 19.5,
         "date": "2023-06-28",
         "typeFood": "Dogfood",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 11,
-        "name": "Iams ProActive Health Adult Dog Food",
-        "class": "Premium",
-        "breed": "All breeds",
-        "weight": "15 kg",
-        "price": 16.99,
-        "date": "2023-06-28",
-        "typeFood": "Dogfood",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 12,
-        "name": "Purina ONE SmartBlend Natural Adult Dog Food",
-        "class": "Premium",
-        "breed": "All breeds",
-        "weight": "14.9 kg",
-        "price": 15.25,
-        "date": "2023-06-28",
-        "typeFood": "Dogfood",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 13,
-        "name": "Pedigree Adult Dry Dog Food",
-        "class": "Economy",
-        "breed": "All breeds",
-        "weight": "20 kg",
-        "price": 10.99,
-        "date": "2023-06-28",
-        "typeFood": "Dogfood",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 14,
-        "name": "Eukanuba Adult Dry Dog Food",
-        "class": "Premium",
-        "breed": "All breeds",
-        "weight": "15 kg",
-        "price": 19.75,
-        "date": "2023-06-28",
-        "typeFood": "Dogfood",
-        "countryOfOrigin": "USA, EU"
-      },
-      {
-        "id": 15,
-        "name": "Cesar Gourmet Wet Dog Food",
-        "class": "Premium",
-        "breed": "All breeds",
-        "weight": "24 x 100 g",
-        "price": 15.99,
-        "date": "2023-06-28",
-        "typeFood": "Dogfood",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 16,
-        "name": "Rachael Ray Nutrish Natural Wet Dog Food",
-        "class": "Premium",
-        "breed": "All breeds",
-        "weight": "24 x 85 g",
-        "price": 12.5,
-        "date": "2023-06-28",
-        "typeFood": "Dogfood",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 17,
-        "name": "Wellness Complete Health Natural Wet Dog Food",
-        "class": "Premium",
-        "breed": "All breeds",
-        "weight": "12 x 12.5 oz",
-        "price": 18.75,
-        "date": "2023-06-28",
-        "typeFood": "Dogfood",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 18,
-        "name": "Merrick Grain-Free Wet Dog Food",
-        "class": "Super premium",
-        "breed": "All breeds",
-        "weight": "12 x 12.7 oz",
-        "price": 23.99,
-        "date": "2023-06-28",
-        "typeFood": "Dogfood",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 19,
-        "name": "Nature's Recipe Grain-Free Wet Dog Food",
-        "class": "Premium",
-        "breed": "All breeds",
-        "weight": "12 x 10 oz",
-        "price": 14.25,
-        "date": "2023-06-28",
-        "typeFood": "Dogfood",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 20,
-        "name": "Purina Beneful Wet Dog Food",
-        "class": "Premium",
-        "breed": "All breeds",
-        "weight": "27 x 100 g",
-        "price": 19.99,
-        "date": "2023-06-28",
-        "typeFood": "Dogfood",
-        "countryOfOrigin": "USA"
+        "countryOfOrigin": "USA",
+        "photo": "https://i5.walmartimages.com/asr/01947254-4c39-4269-a7ab-6b2e342bc02f.5d166991b80146792605fb2e3e8637c3.jpeg"
       },
       {
         "id": 21,
@@ -228,7 +128,8 @@
         "price": 15.5,
         "date": "2023-06-28",
         "typeFood": "Catfood",
-        "countryOfOrigin": "France, Poland"
+        "countryOfOrigin": "France, Poland",
+        "photo": "https://cdn.royalcanin-weshare-online.io/vGk5a2QBG95Xk-RBWNnX/v242/packshot-mini-ad-shn17?w=420&fm=jpg&auto=compress"
       },
       {
         "id": 22,
@@ -239,7 +140,8 @@
         "price": 21.99,
         "date": "2023-06-28",
         "typeFood": "Catfood",
-        "countryOfOrigin": "USA"
+        "countryOfOrigin": "USA",
+        "photo": "https://m.media-amazon.com/images/I/71cAOg4XVPL.jpg"
       },
       {
         "id": 23,
@@ -250,7 +152,8 @@
         "price": 18.75,
         "date": "2023-06-28",
         "typeFood": "Catfood",
-        "countryOfOrigin": "USA"
+        "countryOfOrigin": "USA",
+        "photo": "https://images.prom.ua/4527007182_pro-plan-original.jpg"
       },
       {
         "id": 24,
@@ -261,7 +164,8 @@
         "price": 24.99,
         "date": "2023-06-28",
         "typeFood": "Catfood",
-        "countryOfOrigin": "USA"
+        "countryOfOrigin": "USA",
+        "photo": "https://i5.walmartimages.com/asr/15b33a74-a44b-4306-95d3-4ede280c7ad1.96db39145b8c08599e04d0a3f7bc81f9.jpeg"
       },
       {
         "id": 25,
@@ -272,7 +176,8 @@
         "price": 22.5,
         "date": "2023-06-28",
         "typeFood": "Catfood",
-        "countryOfOrigin": "France, Poland"
+        "countryOfOrigin": "France, Poland",
+        "photo": "https://cdn.royalcanin-weshare-online.io/XWkva2QBG95Xk-RBE9Mw/v376/16-kitten-ns-b1?fm=jpg&auto=compress"
       },
       {
         "id": 26,
@@ -283,7 +188,8 @@
         "price": 19.99,
         "date": "2023-06-28",
         "typeFood": "Catfood",
-        "countryOfOrigin": "USA"
+        "countryOfOrigin": "USA",
+        "photo": "https://i5.walmartimages.com/seo/IAMS-PROACTIVE-HEALTH-Adult-Indoor-Weight-Hairball-Care-Dry-Cat-Food-with-Chicken-Turkey-3-5-lb-Bag_e6a2d665-d08e-40ac-953c-5a07aba160a8.caea5ce6979e7c6b66f5b116b8acdf41.jpeg"
       },
       {
         "id": 27,
@@ -294,7 +200,8 @@
         "price": 16.75,
         "date": "2023-06-28",
         "typeFood": "Catfood",
-        "countryOfOrigin": "USA"
+        "countryOfOrigin": "USA",
+        "photo": "https://i5.walmartimages.com/asr/7f0fe95e-996f-4080-962f-09b88ca6e37e.14278d621f92c848f9db31c2ba9a4bb2.png"
       },
       {
         "id": 28,
@@ -305,7 +212,8 @@
         "price": 19.99,
         "date": "2023-06-28",
         "typeFood": "Catfood",
-        "countryOfOrigin": "USA"
+        "countryOfOrigin": "USA",
+        "photo": "https://agwayct.com/cdn/shop/products/33913-1569855794_580x.jpg?v=1673986912"
       },
       {
         "id": 29,
@@ -316,1348 +224,19 @@
         "price": 14.99,
         "date": "2023-06-28",
         "typeFood": "Catfood",
-        "countryOfOrigin": "USA"
+        "countryOfOrigin": "USA",
+        "photo": "https://i5.walmartimages.com/asr/51f709e6-9a16-42d6-9999-2f911c7e9426.4316e8e2dc1450568952b7be55d0e28f.jpeg"
       },
       {
         "id": 30,
-        "name": "Purina ONE Natural Dry Cat Food",
+        "name": "Nutro Wholesome Essentials Large Breed",
         "class": "Premium",
         "breed": "All breeds",
-        "weight": "7 lb",
-        "price": 13.25,
-        "date": "2023-06-28",
-        "typeFood": "Catfood",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 31,
-        "name": "Royal Canin Veterinary Diet Urinary SO Dry Cat Food",
-        "class": "Super premium",
-        "breed": "All breeds",
-        "weight": "7.7 lb",
-        "price": 31.99,
-        "date": "2023-06-28",
-        "typeFood": "Catfood",
-        "countryOfOrigin": "France, Poland"
-      },
-      {
-        "id": 32,
-        "name": "Purina Fancy Feast Gourmet Wet Cat Food",
-        "class": "Premium",
-        "breed": "All breeds",
-        "weight": "24 x 85 g",
-        "price": 17.99,
-        "date": "2023-06-28",
-        "typeFood": "Catfood",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 33,
-        "name": "Sheba Perfect Portions Grain-Free Wet Cat Food",
-        "class": "Premium",
-        "breed": "All breeds",
-        "weight": "24 x 37.5 g",
-        "price": 14.75,
-        "date": "2023-06-28",
-        "typeFood": "Catfood",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 34,
-        "name": "Wellness CORE Grain-Free Wet Cat Food",
-        "class": "Super premium",
-        "breed": "All breeds",
-        "weight": "12 x 5.5 oz",
-        "price": 21.5,
-        "date": "2023-06-28",
-        "typeFood": "Catfood",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 35,
-        "name": "Merrick Purrfect Bistro Grain-Free Wet Cat Food",
-        "class": "Super premium",
-        "breed": "All breeds",
-        "weight": "24 x 3 oz",
-        "price": 28.99,
-        "date": "2023-06-28",
-        "typeFood": "Catfood",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 36,
-        "name": "Blue Buffalo Wilderness High Protein Wet Cat Food",
-        "class": "Premium",
-        "breed": "All breeds",
-        "weight": "24 x 3 oz",
-        "price": 24.75,
-        "date": "2023-06-28",
-        "typeFood": "Catfood",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 37,
-        "name": "Friskies Pate Wet Cat Food",
-        "class": "Economy",
-        "breed": "All breeds",
-        "weight": "48 x 5.5 oz",
-        "price": 20.99,
-        "date": "2023-06-28",
-        "typeFood": "Catfood",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 38,
-        "name": "Meow Mix Original Choice Dry Cat Food",
-        "class": "Economy",
-        "breed": "All breeds",
-        "weight": "16 lb",
-        "price": 12.5,
-        "date": "2023-06-28",
-        "typeFood": "Catfood",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 39,
-        "name": "Kaytee Forti-Diet Pro Health Parakeet Food",
-        "class": "Premium",
-        "species": "Parakeet",
         "weight": "5 lb",
-        "price": 9.99,
-        "date": "2023-06-28",
-        "typeFood": "Birdfood",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 40,
-        "name": "ZuPreem FruitBlend Flavor Pellets Bird Food",
-        "class": "Premium",
-        "species": "All birds",
-        "weight": "3.5 lb",
-        "price": 14.5,
-        "date": "2023-06-28",
-        "typeFood": "Birdfood",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 41,
-        "name": "Harrison's Adult Lifetime Coarse Bird Food",
-        "class": "Super premium",
-        "species": "All birds",
-        "weight": "5 lb",
-        "price": 23.99,
-        "date": "2023-06-28",
-        "typeFood": "Birdfood",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 42,
-        "name": "Lafeber's Classic Nutri-Berries Pet Bird Food",
-        "class": "Premium",
-        "species": "All birds",
-        "weight": "3 lb",
-        "price": 12.99,
-        "date": "2023-06-28",
-        "typeFood": "Birdfood",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 43,
-        "name": "Roudybush Daily Maintenance Bird Food",
-        "class": "Premium",
-        "species": "All birds",
-        "weight": "10 lb",
-        "price": 31.5,
-        "date": "2023-06-28",
-        "typeFood": "Birdfood",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 44,
-        "name": "Kaytee Fiesta Gourmet Variety Diet Bird Food",
-        "class": "Premium",
-        "species": "All birds",
-        "weight": "4.5 lb",
-        "price": 15.75,
-        "date": "2023-06-28",
-        "typeFood": "Birdfood",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 45,
-        "name": "Volkman Avian Science Super Parrotlet Bird Food",
-        "class": "Premium",
-        "species": "Parrotlet",
-        "weight": "4 lb",
-        "price": 18.99,
-        "date": "2023-06-28",
-        "typeFood": "Birdfood",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 46,
-        "name": "Higgins Vita Seed Parrot Food",
-        "class": "Premium",
-        "species": "Parrot",
-        "weight": "5 lb",
-        "price": 11.25,
-        "date": "2023-06-28",
-        "typeFood": "Birdfood",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 47,
-        "name": "Lafeber's Premium Daily Diet Pellets Bird Food",
-        "class": "Premium",
-        "species": "All birds",
-        "weight": "5 lb",
-        "price": 26.5,
-        "date": "2023-06-28",
-        "typeFood": "Birdfood",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 48,
-        "name": "Pretty Bird Daily Select Premium Bird Food",
-        "class": "Premium",
-        "species": "All birds",
-        "weight": "8 lb",
-        "price": 32.99,
-        "date": "2023-06-28",
-        "typeFood": "Birdfood",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 49,
-        "name": "Nupro Dog Supplement",
-        "type": "Vitamin and Supplement",
-        "forBreedSize": "All breeds",
-        "forLifeStage": "All life stages",
-        "price": 25.99,
-        "date": "2023-06-28",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 50,
-        "name": "Zesty Paws Omega Bites",
-        "type": "Vitamin and Supplement",
-        "forBreedSize": "All breeds",
-        "forLifeStage": "All life stages",
-        "price": 19.95,
-        "date": "2023-06-28",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 51,
-        "name": "Nutramax Cosequin DS Plus MSM Chewable Tablets",
-        "type": "Vitamin and Supplement",
-        "forBreedSize": "All breeds",
-        "forLifeStage": "All life stages",
-        "price": 35.99,
-        "date": "2023-06-28",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 52,
-        "name": "Glandex Dog & Cat Anal Gland Support Supplement",
-        "type": "Vitamin and Supplement",
-        "forBreedSize": "All breeds",
-        "forLifeStage": "All life stages",
-        "price": 29.99,
-        "date": "2023-06-28",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 53,
-        "name": "VetriScience Laboratories Canine Plus Multivitamin",
-        "type": "Vitamin and Supplement",
-        "forBreedSize": "All breeds",
-        "forLifeStage": "All life stages",
-        "price": 12.5,
-        "date": "2023-06-28",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 54,
-        "name": "PetHonesty 10-in-1 Multivitamin with Glucosamine",
-        "type": "Vitamin and Supplement",
-        "forBreedSize": "All breeds",
-        "forLifeStage": "All life stages",
-        "price": 27.99,
-        "date": "2023-06-28",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 55,
-        "name": "Nature's Bounty Fish Oil",
-        "type": "Vitamin and Supplement",
-        "forBreedSize": "All breeds",
-        "forLifeStage": "All life stages",
-        "price": 9.99,
-        "date": "2023-06-28",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 56,
-        "name": "ProSense Multivitamin for All Life Stages",
-        "type": "Vitamin and Supplement",
-        "forBreedSize": "All breeds",
-        "forLifeStage": "All life stages",
-        "price": 7.99,
-        "date": "2023-06-28",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 57,
-        "name": "Nutri-Vet Senior-Vite Chewables for Senior Dogs",
-        "type": "Vitamin and Supplement",
-        "forBreedSize": "Senior dogs",
-        "forLifeStage": "Senior",
         "price": 14.99,
         "date": "2023-06-28",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 58,
-        "name": "Pet Naturals of Vermont Daily Probiotic for Dogs",
-        "type": "Vitamin and Supplement",
-        "forBreedSize": "All breeds",
-        "forLifeStage": "All life stages",
-        "price": 11.75,
-        "date": "2023-06-28",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 59,
-        "name": "NaturVet All-in-One 4-in-1 Support for Dogs",
-        "type": "Vitamin and Supplement",
-        "forBreedSize": "All breeds",
-        "forLifeStage": "All life stages",
-        "price": 22.5,
-        "date": "2023-06-28",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 60,
-        "name": "The Missing Link Original All-Natural Superfood Dog Supplement",
-        "type": "Vitamin and Supplement",
-        "forBreedSize": "All breeds",
-        "forLifeStage": "All life stages",
-        "price": 18.99,
-        "date": "2023-06-28",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 61,
-        "name": "Ark Naturals Brushless Toothpaste for Dogs",
-        "type": "Vitamin and Supplement",
-        "forBreedSize": "All breeds",
-        "forLifeStage": "All life stages",
-        "price": 13.75,
-        "date": "2023-06-28",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 62,
-        "name": "Vet's Best Aspirin Free Aches + Pains Dog Supplement",
-        "type": "Vitamin and Supplement",
-        "forBreedSize": "All breeds",
-        "forLifeStage": "All life stages",
-        "price": 9.49,
-        "date": "2023-06-28",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 63,
-        "name": "Hill's Prescription Diet j/d Joint Care Dog Food",
-        "type": "Vitamin and Supplement",
-        "forBreedSize": "All breeds",
-        "forLifeStage": "Adult",
-        "price": 34.99,
-        "date": "2023-06-28",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 64,
-        "name": "VetriScience Laboratories GlycoFlex Plus Joint Support Dog Supplement",
-        "type": "Vitamin and Supplement",
-        "forBreedSize": "All breeds",
-        "forLifeStage": "Adult",
-        "price": 39.99,
-        "date": "2023-06-28",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 65,
-        "name": "NaturVet Hemp Joint Health Dog Soft Chews",
-        "type": "Vitamin and Supplement",
-        "forBreedSize": "All breeds",
-        "forLifeStage": "Adult",
-        "price": 29.5,
-        "date": "2023-06-28",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 66,
-        "name": "ProSense Advanced Strength Glucosamine Chew Tablets for Dogs",
-        "type": "Vitamin and Supplement",
-        "forBreedSize": "All breeds",
-        "forLifeStage": "Adult",
-        "price": 17.99,
-        "date": "2023-06-28",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 67,
-        "name": "Nupro Joint & Immunity Support Dog Supplement",
-        "type": "Vitamin and Supplement",
-        "forBreedSize": "All breeds",
-        "forLifeStage": "Adult",
-        "price": 24.99,
-        "date": "2023-06-28",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 68,
-        "name": "Vet's Best Gas Busters Dog Supplement",
-        "type": "Vitamin and Supplement",
-        "forBreedSize": "All breeds",
-        "forLifeStage": "Adult",
-        "price": 8.99,
-        "date": "2023-06-28",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 69,
-        "name": "Frontline Plus Flea and Tick Treatment",
-        "type": "Flea and Tick Control",
-        "forBreedSize": "All breeds",
-        "forLifeStage": "All life stages",
-        "applicationMethod": "Topical",
-        "price": 29.99,
-        "date": "2023-06-28",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 70,
-        "name": "Advantix II Flea and Tick Control for Dogs",
-        "type": "Flea and Tick Control",
-        "forBreedSize": "All breeds",
-        "forLifeStage": "All life stages",
-        "applicationMethod": "Topical",
-        "price": 34.99,
-        "date": "2023-06-28",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 71,
-        "name": "Seresto Flea and Tick Collar",
-        "type": "Flea and Tick Control",
-        "forBreedSize": "All breeds",
-        "forLifeStage": "All life stages",
-        "applicationMethod": "Collar",
-        "price": 54.99,
-        "date": "2023-06-28",
-        "countryOfOrigin": "Germany"
-      },
-      {
-        "id": 72,
-        "name": "K9 Advantix II Flea and Tick Treatment",
-        "type": "Flea and Tick Control",
-        "forBreedSize": "All breeds",
-        "forLifeStage": "All life stages",
-        "applicationMethod": "Topical",
-        "price": 32.99,
-        "date": "2023-06-28",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 73,
-        "name": "NexGard Chewables Flea and Tick Control",
-        "type": "Flea and Tick Control",
-        "forBreedSize": "All breeds",
-        "forLifeStage": "All life stages",
-        "applicationMethod": "Oral",
-        "price": 39.99,
-        "date": "2023-06-28",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 74,
-        "name": "Bravecto Chewable Flea and Tick Treatment",
-        "type": "Flea and Tick Control",
-        "forBreedSize": "All breeds",
-        "forLifeStage": "All life stages",
-        "applicationMethod": "Oral",
-        "price": 48.99,
-        "date": "2023-06-28",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 75,
-        "name": "Frontline Spray Flea and Tick Treatment",
-        "type": "Flea and Tick Control",
-        "forBreedSize": "All breeds",
-        "forLifeStage": "All life stages",
-        "applicationMethod": "Spray",
-        "price": 24.99,
-        "date": "2023-06-28",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 76,
-        "name": "Advantage II Flea Treatment for Dogs",
-        "type": "Flea Control",
-        "forBreedSize": "All breeds",
-        "forLifeStage": "All life stages",
-        "applicationMethod": "Topical",
-        "price": 22.99,
-        "date": "2023-06-28",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 77,
-        "name": "Hartz UltraGuard Plus Flea and Tick Treatment",
-        "type": "Flea and Tick Control",
-        "forBreedSize": "All breeds",
-        "forLifeStage": "All life stages",
-        "applicationMethod": "Topical",
-        "price": 15.99,
-        "date": "2023-06-28",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 78,
-        "name": "Sentry Fiproguard Plus Flea and Tick Treatment",
-        "type": "Flea and Tick Control",
-        "forBreedSize": "All breeds",
-        "forLifeStage": "All life stages",
-        "applicationMethod": "Topical",
-        "price": 18.99,
-        "date": "2023-06-28",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 79,
-        "name": "Adams Plus Flea and Tick Shampoo",
-        "type": "Flea and Tick Control",
-        "forBreedSize": "All breeds",
-        "forLifeStage": "All life stages",
-        "applicationMethod": "Shampoo",
-        "price": 9.99,
-        "date": "2023-06-28",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 80,
-        "name": "PetArmor Plus Flea and Tick Treatment",
-        "type": "Flea and Tick Control",
-        "forBreedSize": "All breeds",
-        "forLifeStage": "All life stages",
-        "applicationMethod": "Topical",
-        "price": 21.99,
-        "date": "2023-06-28",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 81,
-        "name": "Capstar Fast-Acting Oral Flea Treatment",
-        "type": "Flea Treatment",
-        "forBreedSize": "All breeds",
-        "forLifeStage": "All life stages",
-        "applicationMethod": "Oral",
-        "price": 29.99,
-        "date": "2023-06-28",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 82,
-        "name": "Vet's Best Flea and Tick Home Spray",
-        "type": "Flea and Tick Control",
-        "forBreedSize": "All breeds",
-        "forLifeStage": "All life stages",
-        "applicationMethod": "Spray",
-        "price": 14.99,
-        "date": "2023-06-28",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 83,
-        "name": "BioSpot Active Care Flea and Tick Spot On",
-        "type": "Flea and Tick Control",
-        "forBreedSize": "All breeds",
-        "forLifeStage": "All life stages",
-        "applicationMethod": "Topical",
-        "price": 17.5,
-        "date": "2023-06-28",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 84,
-        "name": "Sentry Flea and Tick Collar",
-        "type": "Flea and Tick Control",
-        "forBreedSize": "All breeds",
-        "forLifeStage": "All life stages",
-        "applicationMethod": "Collar",
-        "price": 12.99,
-        "date": "2023-06-28",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 85,
-        "name": "Frontline Gold Flea and Tick Treatment",
-        "type": "Flea and Tick Control",
-        "forBreedSize": "All breeds",
-        "forLifeStage": "All life stages",
-        "applicationMethod": "Topical",
-        "price": 31.99,
-        "date": "2023-06-28",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 86,
-        "name": "Seresto Flea and Tick Spray",
-        "type": "Flea and Tick Control",
-        "forBreedSize": "All breeds",
-        "forLifeStage": "All life stages",
-        "applicationMethod": "Spray",
-        "price": 19.99,
-        "date": "2023-06-28",
-        "countryOfOrigin": "Germany"
-      },
-      {
-        "id": 87,
-        "name": "Adams Flea and Tick Collar",
-        "type": "Flea and Tick Control",
-        "forBreedSize": "All breeds",
-        "forLifeStage": "All life stages",
-        "applicationMethod": "Collar",
-        "price": 9.99,
-        "date": "2023-06-28",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 88,
-        "name": "Natural Chemistry Flea and Tick Shampoo",
-        "type": "Flea and Tick Control",
-        "forBreedSize": "All breeds",
-        "forLifeStage": "All life stages",
-        "applicationMethod": "Shampoo",
-        "price": 12.5,
-        "date": "2023-06-28",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 89,
-        "name": "Hartz UltraGuard Pro Flea and Tick Treatment",
-        "type": "Flea and Tick Control",
-        "forBreedSize": "All breeds",
-        "forLifeStage": "All life stages",
-        "applicationMethod": "Topical",
-        "price": 16.99,
-        "date": "2023-06-28",
-        "countryOfOrigin": "USA"
-      },
-      {
-        "id": 90,
-        "name": "Basket-style Dog Muzzle",
-        "category": "Muzzle",
-        "size": "Small",
-        "material": "Nylon",
-        "color": "Black",
-        "price": 9.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 91,
-        "name": "Mesh Dog Muzzle",
-        "category": "Muzzle",
-        "size": "Medium",
-        "material": "Mesh",
-        "color": "Beige",
-        "price": 12.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 92,
-        "name": "Adjustable Leather Dog Muzzle",
-        "category": "Muzzle",
-        "size": "Large",
-        "material": "Leather",
-        "color": "Brown",
-        "price": 19.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 93,
-        "name": "Plastic Dog Muzzle",
-        "category": "Muzzle",
-        "size": "Small",
-        "material": "Plastic",
-        "color": "Clear",
-        "price": 6.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 94,
-        "name": "Wire Dog Muzzle",
-        "category": "Muzzle",
-        "size": "Medium",
-        "material": "Metal",
-        "color": "Silver",
-        "price": 14.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 95,
-        "name": "Soft Silicone Dog Muzzle",
-        "category": "Muzzle",
-        "size": "Small",
-        "material": "Silicone",
-        "color": "Pink",
-        "price": 10.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 96,
-        "name": "Baskerville Ultra Dog Muzzle",
-        "category": "Muzzle",
-        "size": "Large",
-        "material": "Rubber",
-        "color": "Black",
-        "price": 24.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 97,
-        "name": "Neoprene Padded Dog Muzzle",
-        "category": "Muzzle",
-        "size": "Medium",
-        "material": "Neoprene",
-        "color": "Red",
-        "price": 16.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 98,
-        "name": "Short Snout Dog Muzzle",
-        "category": "Muzzle",
-        "size": "Small",
-        "material": "Nylon",
-        "color": "Blue",
-        "price": 13.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 99,
-        "name": "Leather Basket Dog Muzzle",
-        "category": "Muzzle",
-        "size": "Large",
-        "material": "Leather",
-        "color": "Tan",
-        "price": 21.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 100,
-        "name": "Oatmeal Dog Shampoo",
-        "category": "Shampoo",
-        "type": "Oatmeal",
-        "scent": "Lavender",
-        "size": "16 oz",
-        "price": 12.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 101,
-        "name": "Hypoallergenic Dog Shampoo",
-        "category": "Shampoo",
-        "type": "Hypoallergenic",
-        "scent": "Unscented",
-        "size": "8 oz",
-        "price": 9.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 102,
-        "name": "Coconut Oil Dog Shampoo",
-        "category": "Shampoo",
-        "type": "Coconut Oil",
-        "scent": "Coconut",
-        "size": "12 oz",
-        "price": 11.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 103,
-        "name": "Medicated Dog Shampoo",
-        "category": "Shampoo",
-        "type": "Medicated",
-        "scent": "Tea Tree",
-        "size": "10 oz",
-        "price": 14.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 104,
-        "name": "Puppy Shampoo",
-        "category": "Shampoo",
-        "type": "Gentle",
-        "scent": "Baby Powder",
-        "size": "8 oz",
-        "price": 8.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 105,
-        "name": "Detangling Dog Conditioner",
-        "category": "Conditioner",
-        "type": "Detangling",
-        "scent": "Green Tea",
-        "size": "12 oz",
-        "price": 10.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 106,
-        "name": "Whitening Dog Shampoo",
-        "category": "Shampoo",
-        "type": "Whitening",
-        "scent": "Citrus",
-        "size": "16 oz",
-        "price": 13.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 107,
-        "name": "Leave-In Dog Conditioner",
-        "category": "Conditioner",
-        "type": "Leave-In",
-        "scent": "Cucumber Melon",
-        "size": "8 oz",
-        "price": 9.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 108,
-        "name": "Flea and Tick Shampoo",
-        "category": "Shampoo",
-        "type": "Flea and Tick",
-        "scent": "Eucalyptus",
-        "size": "12 oz",
-        "price": 15.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 109,
-        "name": "Dry Dog Shampoo",
-        "category": "Shampoo",
-        "type": "Dry",
-        "scent": "Fresh Breeze",
-        "size": "8 oz",
-        "price": 7.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 110,
-        "name": "Deodorizing Dog Spray",
-        "category": "Spray",
-        "type": "Deodorizing",
-        "scent": "Spring Meadow",
-        "size": "6 oz",
-        "price": 6.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 111,
-        "name": "Tearless Dog Shampoo",
-        "category": "Shampoo",
-        "type": "Tearless",
-        "scent": "Chamomile",
-        "size": "10 oz",
-        "price": 11.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 112,
-        "name": "Soothing Dog Shampoo",
-        "category": "Shampoo",
-        "type": "Soothing",
-        "scent": "Aloe Vera",
-        "size": "16 oz",
-        "price": 12.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 113,
-        "name": "Leave-In Detangler Spray",
-        "category": "Spray",
-        "type": "Detangler",
-        "scent": "Rosemary",
-        "size": "8 oz",
-        "price": 9.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 114,
-        "name": "Waterless Foam Dog Shampoo",
-        "category": "Shampoo",
-        "type": "Waterless",
-        "scent": "Fresh Apple",
-        "size": "10 oz",
-        "price": 8.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 115,
-        "name": "Silk Coat Conditioner",
-        "category": "Conditioner",
-        "type": "Silk Coat",
-        "scent": "Vanilla",
-        "size": "12 oz",
-        "price": 13.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 116,
-        "name": "Mild Puppy Shampoo",
-        "category": "Shampoo",
-        "type": "Gentle",
-        "scent": "Mild",
-        "size": "8 oz",
-        "price": 9.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 117,
-        "name": "Stain and Odor Remover",
-        "category": "Cleaner",
-        "type": "Stain and Odor",
-        "scent": "Fresh Linen",
-        "size": "32 oz",
-        "price": 11.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 118,
-        "name": "Anti-Itch Dog Shampoo",
-        "category": "Shampoo",
-        "type": "Anti-Itch",
-        "scent": "Oatmeal",
-        "size": "12 oz",
-        "price": 14.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 119,
-        "name": "Dental Water Additive",
-        "category": "Dental Care",
-        "type": "Water Additive",
-        "scent": "Mint",
-        "size": "16 oz",
-        "price": 16.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 120,
-        "name": "Clumping Cat Litter",
-        "category": "Litter",
-        "type": "Clumping",
-        "scent": "Fresh Linen",
-        "size": "20 lbs",
-        "price": 15.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 121,
-        "name": "Silica Gel Cat Litter",
-        "category": "Litter",
-        "type": "Silica Gel",
-        "scent": "Unscented",
-        "size": "10 lbs",
-        "price": 12.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 122,
-        "name": "Natural Wood Pellet Cat Litter",
-        "category": "Litter",
-        "type": "Wood Pellet",
-        "scent": "Pine",
-        "size": "15 lbs",
-        "price": 13.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 123,
-        "name": "Paper Cat Litter",
-        "category": "Litter",
-        "type": "Paper",
-        "scent": "Fresh Scent",
-        "size": "12 lbs",
-        "price": 11.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 124,
-        "name": "Natural Corn Cat Litter",
-        "category": "Litter",
-        "type": "Corn",
-        "scent": "Baby Powder",
-        "size": "18 lbs",
-        "price": 14.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 125,
-        "name": "Crystal Cat Litter",
-        "category": "Litter",
-        "type": "Crystal",
-        "scent": "Lavender",
-        "size": "8 lbs",
-        "price": 9.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 126,
-        "name": "Scented Pine Cat Litter",
-        "category": "Litter",
-        "type": "Pine",
-        "scent": "Tropical Breeze",
-        "size": "14 lbs",
-        "price": 12.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 127,
-        "name": "Walnut Shell Cat Litter",
-        "category": "Litter",
-        "type": "Walnut Shell",
-        "scent": "Natural",
-        "size": "20 lbs",
-        "price": 16.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 128,
-        "name": "Plant-Based Cat Litter",
-        "category": "Litter",
-        "type": "Plant-Based",
-        "scent": "Citrus",
-        "size": "16 lbs",
-        "price": 14.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 129,
-        "name": "Multi-Cat Clumping Litter",
-        "category": "Litter",
-        "type": "Clumping",
-        "scent": "Mountain Fresh",
-        "size": "25 lbs",
-        "price": 19.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 130,
-        "name": "Bamboo Cat Litter",
-        "category": "Litter",
-        "type": "Bamboo",
-        "scent": "Green Tea",
-        "size": "12 lbs",
-        "price": 13.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 131,
-        "name": "Odor Control Cat Litter",
-        "category": "Litter",
-        "type": "Odor Control",
-        "scent": "Spring Meadow",
-        "size": "20 lbs",
-        "price": 15.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 132,
-        "name": "Recycled Paper Cat Litter",
-        "category": "Litter",
-        "type": "Recycled Paper",
-        "scent": "Fresh Scent",
-        "size": "14 lbs",
-        "price": 12.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 133,
-        "name": "Flushable Cat Litter",
-        "category": "Litter",
-        "type": "Flushable",
-        "scent": "Lemon",
-        "size": "10 lbs",
-        "price": 11.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 134,
-        "name": "Tofu Cat Litter",
-        "category": "Litter",
-        "type": "Tofu",
-        "scent": "Natural",
-        "size": "16 lbs",
-        "price": 14.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 135,
-        "name": "Non-Clumping Cat Litter",
-        "category": "Litter",
-        "type": "Non-Clumping",
-        "scent": "Fresh Scent",
-        "size": "15 lbs",
-        "price": 13.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 136,
-        "name": "Pine Pellet Cat Litter",
-        "category": "Litter",
-        "type": "Pine Pellet",
-        "scent": "Natural",
-        "size": "20 lbs",
-        "price": 16.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 137,
-        "name": "Activated Carbon Cat Litter",
-        "category": "Litter",
-        "type": "Activated Carbon",
-        "scent": "Fresh Linen",
-        "size": "12 lbs",
-        "price": 11.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 138,
-        "name": "Scoopable Cat Litter",
-        "category": "Litter",
-        "type": "Scoopable",
-        "scent": "Mild Scent",
-        "size": "18 lbs",
-        "price": 14.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 139,
-        "name": "Natural Grass Cat Litter",
-        "category": "Litter",
-        "type": "Natural Grass",
-        "scent": "Fresh Meadow",
-        "size": "16 lbs",
-        "price": 13.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 140,
-        "name": "Large Metal Bird Cage",
-        "category": "Bird Cage",
-        "type": "Metal",
-        "size": "24\" x 18\" x 36\"",
-        "color": "Black",
-        "price": 79.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 141,
-        "name": "Portable Travel Bird Cage",
-        "category": "Bird Cage",
-        "type": "Portable",
-        "size": "18\" x 14\" x 20\"",
-        "color": "Blue",
-        "price": 39.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 142,
-        "name": "Wooden Bird Cage",
-        "category": "Bird Cage",
-        "type": "Wooden",
-        "size": "20\" x 16\" x 24\"",
-        "color": "Natural",
-        "price": 69.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 143,
-        "name": "Flight Cage with Stand",
-        "category": "Bird Cage",
-        "type": "Flight Cage",
-        "size": "30\" x 18\" x 36\"",
-        "color": "White",
-        "price": 99.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 144,
-        "name": "Acrylic Bird Cage",
-        "category": "Bird Cage",
-        "type": "Acrylic",
-        "size": "22\" x 16\" x 20\"",
-        "color": "Clear",
-        "price": 89.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 145,
-        "name": "Breeder Bird Cage",
-        "category": "Bird Cage",
-        "type": "Breeder",
-        "size": "36\" x 18\" x 18\"",
-        "color": "Silver",
-        "price": 59.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 146,
-        "name": "Dome Top Bird Cage",
-        "category": "Bird Cage",
-        "type": "Dome Top",
-        "size": "20\" x 20\" x 30\"",
-        "color": "Green",
-        "price": 79.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 147,
-        "name": "Wrought Iron Bird Cage",
-        "category": "Bird Cage",
-        "type": "Wrought Iron",
-        "size": "24\" x 20\" x 32\"",
-        "color": "Antique",
-        "price": 129.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 148,
-        "name": "Hanging Bird Cage",
-        "category": "Bird Cage",
-        "type": "Hanging",
-        "size": "16\" x 16\" x 24\"",
-        "color": "Red",
-        "price": 49.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 149,
-        "name": "Stackable Bird Cage",
-        "category": "Bird Cage",
-        "type": "Stackable",
-        "size": "18\" x 18\" x 18\"",
-        "color": "Yellow",
-        "price": 59.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 150,
-        "name": "Flea and Tick Collar for Cats",
-        "category": "Flea & Tick",
-        "type": "Collar",
-        "protectionDuration": "8 months",
-        "waterproof": true,
-        "price": 14.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 151,
-        "name": "Flea and Tick Spot-On Treatment for Cats",
-        "category": "Flea & Tick",
-        "type": "Spot-On",
-        "protectionDuration": "1 month",
-        "waterproof": true,
-        "price": 19.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 152,
-        "name": "Flea and Tick Shampoo for Cats",
-        "category": "Flea & Tick",
-        "type": "Shampoo",
-        "protectionDuration": "Up to 2 weeks",
-        "waterproof": false,
-        "price": 9.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 153,
-        "name": "Flea and Tick Spray for Cats",
-        "category": "Flea & Tick",
-        "type": "Spray",
-        "protectionDuration": "Up to 30 days",
-        "waterproof": false,
-        "price": 12.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 154,
-        "name": "Flea and Tick Powder for Cats",
-        "category": "Flea & Tick",
-        "type": "Powder",
-        "protectionDuration": "Up to 7 days",
-        "waterproof": false,
-        "price": 8.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 155,
-        "name": "Flea and Tick Wipes for Cats",
-        "category": "Flea & Tick",
-        "type": "Wipes",
-        "protectionDuration": "Up to 2 weeks",
-        "waterproof": false,
-        "price": 6.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 156,
-        "name": "Flea and Tick Oral Treatment for Cats",
-        "category": "Flea & Tick",
-        "type": "Oral",
-        "protectionDuration": "1 month",
-        "waterproof": true,
-        "price": 24.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 157,
-        "name": "Flea and Tick Collar for Kittens",
-        "category": "Flea & Tick",
-        "type": "Collar",
-        "protectionDuration": "6 months",
-        "waterproof": true,
-        "price": 12.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 158,
-        "name": "Flea and Tick Spray for Kittens",
-        "category": "Flea & Tick",
-        "type": "Spray",
-        "protectionDuration": "Up to 30 days",
-        "waterproof": false,
-        "price": 9.99,
-        "date": "2023-06-28"
-      },
-      {
-        "id": 159,
-        "name": "Flea and Tick Shampoo for Kittens",
-        "category": "Flea & Tick",
-        "type": "Shampoo",
-        "protectionDuration": "Up to 2 weeks",
-        "waterproof": false,
-        "price": 7.99,
-        "date": "2023-06-28"
+        "typeFood": "Catfood",
+        "countryOfOrigin": "USA",
+        "photo": "https://rosedalemills.com/cdn/shop/products/37073-1488384440_1200x1200.jpg?v=1668460322"
       }
     ]
-  
-  

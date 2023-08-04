@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 // Components
-import { Header }  from 'shared';
-import { HomePage, CartPage, ContactsPage } from 'pages'
+import {  Header }  from 'shared';
+import { HomePage, CartPage, ContactsPage, PageOfProduct} from 'pages'
 
 
 
@@ -48,8 +48,6 @@ function App() {
       return updatedItems.filter((item) => item.quantity > 0);
     });
   };
-
-
  
 
   const handleClearCart = () => {
@@ -58,7 +56,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Header />
+        <Header cartItems={cartItems}/>
         <Routes>
           <Route path="/" element={<HomePage addToCart={addToCart} cartItems={cartItems} />}/>
           <Route path="/homepage" element={<HomePage addToCart={addToCart} cartItems={cartItems} />}/>
@@ -73,6 +71,8 @@ function App() {
             }  
           />
           <Route path="/contacts" element={<ContactsPage />} />
+          <Route path="/products" element={<PageOfProduct addToCart={addToCart} cartItems={cartItems} removeFromCart={removeFromCart} 
+                handleClearCart={handleClearCart}/>}/>
         </Routes>
       </BrowserRouter>
     </>

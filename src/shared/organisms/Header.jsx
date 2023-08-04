@@ -3,6 +3,8 @@ import React from "react";
 import { ButtonHomePage, ContactsButton, ShoppingCartButton, InputSearch, Logo } from "shared";
 // Styles
 import styled from "styled-components";
+//Json
+import productsData from '../../../animalProducts.json'
 
 const HeaderContainer = styled.header`
   display: flex;
@@ -30,12 +32,14 @@ const LogoWrapper = styled.div`
 `;
 
 export const Header = () => {
+
+ 
   return (
     <HeaderContainer>
       <LogoWrapper>
         <Logo />
         <ButtonHomePage />
-        <InputSearch />
+        <InputSearch productsData={productsData}/>
       </LogoWrapper>
       <Navigation>
         <ContactsButton />
