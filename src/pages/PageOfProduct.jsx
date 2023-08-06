@@ -1,6 +1,8 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
+//styles
 import styled from 'styled-components';
-import productsData from '../../animalProducts.json'
+
 
 const CartContainer = styled.div`
   max-width: 1200px;
@@ -27,15 +29,19 @@ const ImgComponent = styled.img`
 
 
 
-export const PageOfProduct = ({cartItems}) => {
+export const PageOfProduct = () => {
 
-   
+    const location = useLocation();
+
+
+     const product = JSON.parse(localStorage.getItem('cartItems')).filter( p => p.id === location.state.productId)
+
     return (
       <CartContainer>
         <h1>PRODUCT</h1>
 
         <CartList>  
-        {cartItems.map((item, index) => (
+        {product.map((item, index) => (
           <div key={index}>
            <h3>{item.name}</h3>
            <ImgComponent src={item.photo} alt={item.name}/>
@@ -46,3 +52,6 @@ export const PageOfProduct = ({cartItems}) => {
       </CartContainer>
     );
   };
+
+
+
