@@ -1,14 +1,22 @@
 import { useNavigate } from "react-router-dom";
 import React  from 'react';
 
+import styled from 'styled-components';
+
+
 
 export const ButtonToGoProduct = ({products, onClose, handleProductClick }) => {
-    const navigate = useNavigate();
+    const navigate = useNavigate(products);
 
-  const handleButtonClick = () => {
-    navigate(`/products/`);
+  const handleButtonClick = (id) => {
+    navigate(`/products`, {
+      state: {
+        productId: id
+      }
+    });
     onClose();
   };
+
 
   return (
 
