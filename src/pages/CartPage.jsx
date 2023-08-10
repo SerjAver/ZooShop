@@ -86,6 +86,10 @@ export const CartPage = ({cartItems, addToCart, removeFromCart, handleClearCart}
   const handleRemoveItem = (product) => {
     removeFromCart(product);
   };
+
+
+
+
   return (
     <CartContainer>
       <h1>Cart</h1>

@@ -73,6 +73,7 @@ export const InputSearch = ({ productsData }) => {
     setInput(name);
     setShowResults(false);
     setShowModal(true);
+    setInput('');
   };
 
   const handleOutsideClick = (e) => {
@@ -104,7 +105,7 @@ export const InputSearch = ({ productsData }) => {
               <Img src={product.photo} alt={product.name} />
               {product.name}
               <ButtonToGoProduct
-                products={searchResults}
+                product={product}
                 onClose={() => setShowModal(false)}
               />
             </ResultItem>
