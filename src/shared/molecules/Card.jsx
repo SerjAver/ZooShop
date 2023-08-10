@@ -1,5 +1,6 @@
 
 // Assets
+import { useNavigate } from 'react-router-dom';
 import cartIcon from '../../assets/Cart.png';
 // Styles
 import styled from 'styled-components';
@@ -81,13 +82,24 @@ margin-top: 3px;
 `
 
 export const Card = ({ product, addToCart, cartItems }) => {
+  const navigate = useNavigate();
+
+
   const isInCart = cartItems.some((item) => item.id === product.id);
   const clickAddToCart = () => {
     addToCart(product);
   };
+
+
+  const handleCardClick = () => {
+    navigate.push({
+      pathname: '/products', // Replace with your actual product page path
+      state: { productId: product.id }, // Send the product ID to the product page
+    });
+  };
   return (
     <>
-      <CardDesktop>
+      <CardDesktop onClick={()=> handleCardClick}>
         <Photo src={product.photo} alt={product.name}/>
         <Title>{product.name}</Title>
         <br/>
