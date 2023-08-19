@@ -6,6 +6,7 @@ import { ButtonToGoProduct } from '../buttons/ButtonToGoProduct';
 import styled from 'styled-components';
 
 
+
 const SearchInput = styled.input`
   display: flex;
   padding: 8px;
@@ -14,26 +15,66 @@ const SearchInput = styled.input`
   margin-right: 15px;
   flex-shrink: 0;
 
-  @media (max-width: 768px) {
+  @media (max-width: 768px, max-height: 360px) {
     margin-right: 0;
     margin-bottom: 15px;
   }
 `;
 
 const SearchResults = styled.div`
-  top: 68px;
   position: absolute;
   z-index: 1;
   background-color: #fff;
   box-shadow: 0 0 5px rgba(122, 225, 167, 0.4);
   border: 1px solid #ccc;
   border-radius: 5px;
-  max-height: 348px;
   overflow-y: auto;
-  left: 390px;
-  width: 28%;
-  height: 65%;
+  max-height: 530px;
+  width: 300px;
+  top: 67px;
+  left: 411px;
+  
+
+  @media (max-width: 768px), (max-height: 360px) {
+    width: 166%;
+position: static;
+width: 339px;
+margin-top: -8px;
+  }
 `;
+
+const CloseButton = styled.button`
+  position: fixed;
+  top: 80px;
+  right: 694px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #f7caa3;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: #393930;
+  font-size: 16px;
+  font-weight: bold;
+  border: 1px solid black;
+  z-index: 2;
+  &:hover {
+    background-color: teal;
+    color: white;
+  }
+  &:active {
+    transform: translateY(2px);
+  }
+
+  @media (max-width: 768px), (max-height: 360px) {
+    top: 153px;
+    right: 23px;
+    position: absolute; 
+  }
+`;
+
 
 const Img = styled.img`
 width: 20%;
@@ -60,13 +101,21 @@ export const InputSearch = ({ productsData }) => {
   const searchContainerRef = useRef(null);
   const [showModal, setShowModal] = useState(false);
 
+
   const handleSearch = (value) => {
     setInput(value);
     const filteredProducts = productsData.filter((product) =>
       product.name.toLowerCase().includes(value.toLowerCase())
     );
-    setSearchResults(filteredProducts);
-    setShowResults(true);
+
+    if (value.length >= 3 && filteredProducts.length > 0) {
+     
+      setSearchResults(filteredProducts);
+      setShowResults(true);
+    } else {
+      setSearchResults([]);
+      setShowResults(false);
+    }
   };
 
   const handleSelectResult = (name) => {
@@ -110,9 +159,12 @@ export const InputSearch = ({ productsData }) => {
               />
             </ResultItem>
           ))}
+            <CloseButton onClick={() => setShowResults(false)}>х</CloseButton>
 
         </SearchResults>
       )}
     </>
   );
 };
+
+
