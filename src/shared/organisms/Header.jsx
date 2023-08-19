@@ -16,6 +16,7 @@ const HeaderContainer = styled.header`
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: flex-start;
+    padding: 10px;
   }
 `;
 
@@ -24,11 +25,21 @@ const Navigation = styled.nav`
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
+
+  @media (max-width: 768px) {
+    margin-top: 10px;
+  }
 `;
 
 const LogoWrapper = styled.div`
   display: flex;
   align-items: center;
+  gap: 10px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 `;
 
 export const Header = () => {

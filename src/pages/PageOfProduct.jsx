@@ -10,6 +10,10 @@ const CartContainer = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  @media (max-width: 768px) {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
 `;
 
 const CartList = styled.div`
