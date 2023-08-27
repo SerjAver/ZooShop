@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import productsData from '../animalProducts.json'
 // Components
 import {  Header }  from 'shared';
 import { HomePage, CartPage, ContactsPage, PageOfProduct} from 'pages'
@@ -8,15 +9,25 @@ import { HomePage, CartPage, ContactsPage, PageOfProduct} from 'pages'
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
+  const [productIsOver, setProductIsOver] = useState(productsData)
+
+
 
   const addToCart = (product) => {
     const existingItemIndex = cartItems.findIndex((item) => item.name === product.name);
-    if (existingItemIndex !== -1) {
+    const selectedItem = productIsOver.find((item) => item.name === product.name);
+    
+    if (existingItemIndex !== -1 && selectedItem.quantity > 0) {
       const updatedItems = [...cartItems];
-      updatedItems[existingItemIndex].quantity += 1;
+      updatedItems[existingItemIndex].amount += 1;
+      selectedItem.quantity -= 1;
       setCartItems(updatedItems);
-    } else {
-      setCartItems((prevItems) => [...prevItems, { ...product, quantity: 1 }]);
+      setProductIsOver([...productIsOver]);
+    } 
+    else if (selectedItem.quantity > 0) {
+      setCartItems((prevItems) => [...prevItems, { ...product, amount: 0 }]);
+      selectedItem.quantity -= 1;
+      setProductIsOver([...productIsOver]);
     }
   };
 
@@ -37,15 +48,27 @@ function App() {
     setCartItems((prevItems) => {
       const updatedItems = prevItems.map((item) => {
         if (item.name === product.name) {
-          if (item.quantity > 0) {
-            
-            return { ...item, quantity: item.quantity - 1 };
+          if (item.amount > 0) {
+            return { ...item, amount: item.amount - 1 };
           }
         }
         return item;
       });
   
-      return updatedItems.filter((item) => item.quantity > 0);
+      const removedItems = updatedItems.filter((item) => item.amount > 0);
+  
+      if (removedItems.length === updatedItems.length) {
+        const updatedProductIsOver = productIsOver.map((item) => {
+          if (item.name === product.name) {
+            return { ...item, quantity: item.quantity + 1 };
+          }
+          return item;
+        });
+  
+        setProductIsOver(updatedProductIsOver);
+      }
+  
+      return removedItems;
     });
   };
  
@@ -53,10 +76,14 @@ function App() {
   const handleClearCart = () => {
     setCartItems([]);
   };
+
+
+
+  
   return (
     <>
       <BrowserRouter>
-        <Header cartItems={cartItems}/>
+        <Header cartItems={cartItems} addToCart={addToCart}/>
         <Routes>
           <Route path="/" element={<HomePage addToCart={addToCart} cartItems={cartItems} />}/>
           <Route path="/homepage" element={<HomePage addToCart={addToCart} cartItems={cartItems} />}/>

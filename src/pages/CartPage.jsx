@@ -81,7 +81,7 @@ background-color: #333;
 
 
 export const CartPage = ({cartItems, addToCart, removeFromCart, handleClearCart}) => {
-  const total = cartItems.reduce((acc, item) => acc + (item.quantity * item.price), 0);
+  const total = cartItems.reduce((acc, item) => acc + (item.amount * item.price), 0);
   const roundedTotal = total.toFixed(2);
   const handleRemoveItem = (product) => {
     removeFromCart(product);
@@ -103,8 +103,8 @@ export const CartPage = ({cartItems, addToCart, removeFromCart, handleClearCart}
               <AddButton onClick={() => addToCart(item)}>+</AddButton>
               <RedButton onClick={() => handleRemoveItem(item)}>-</RedButton>
             </ButtonContainer>
-            <ItemQuantity>{item.quantity}</ItemQuantity>
-            <div>{(item.quantity * item.price).toFixed(2)}</div>
+            <ItemQuantity>{item.amount}</ItemQuantity>
+            <div>{(item.amount * item.price).toFixed(2)}</div>
           </div>
         ))}
       </CartList>
