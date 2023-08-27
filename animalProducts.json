@@ -9,6 +9,7 @@
         "date": "2023-06-28",
         "typeFood": "Dogfood",
         "countryOfOrigin": "France, Poland",
+        "quantity" : 0,
         "photo": "https://www.puprise.com/wp-content/uploads/2017/10/Royal-Canin-Medium-Adult-7-Dry-Dog-Food.jpg"
       },
       {
@@ -21,6 +22,7 @@
         "date": "2023-06-28",
         "typeFood": "Dogfood",
         "countryOfOrigin": "USA",
+        "quantity" : 10,
         "photo": "https://cdn.tabletki.ua/_images/goods/24500cc0-52b1-11ec-bacd-0050569aacb6/1/AAAAAAkUfGI/img_original_0.jpg"
       },
       {
@@ -33,6 +35,7 @@
         "date": "2023-06-28",
         "typeFood": "Dogfood",
         "countryOfOrigin": "Canada",
+        "quantity" : 15,
         "photo": "https://content1.rozetka.com.ua/goods/images/big/221770570.jpg"
       },
       {
@@ -45,6 +48,7 @@
         "date": "2023-06-28",
         "typeFood": "Dogfood",
         "countryOfOrigin": "Canada",
+        "quantity" : 5,
         "photo": "https://content2.rozetka.com.ua/goods/images/big/341391723.jpg"
       },
       {
@@ -57,6 +61,7 @@
         "date": "2023-06-28",
         "typeFood": "Dogfood",
         "countryOfOrigin": "USA",
+        "quantity" : 20,
         "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC_1sR_uhwOOsNN68WOH4ZCTjCaedIF2Q3TQ&usqp=CAU"
       },
       {
@@ -69,6 +74,7 @@
         "date": "2023-06-28",
         "typeFood": "Dogfood",
         "countryOfOrigin": "USA",
+        "quantity" : 20,
         "photo": "https://i5.walmartimages.com/asr/f532933d-38dd-40be-a3f8-b4bec1b33668.09af0e2cbefc68cd30b77e32f88ed71c.jpeg"
       },
       {
@@ -81,6 +87,7 @@
         "date": "2023-06-28",
         "typeFood": "Dogfood",
         "countryOfOrigin": "USA",
+        "quantity" : 13,
         "photo": "https://m.media-amazon.com/images/I/81ZjCB59CxL._AC_UF1000,1000_QL80_.jpg"
       },
       {
@@ -93,6 +100,7 @@
         "date": "2023-06-28",
         "typeFood": "Dogfood",
         "countryOfOrigin": "USA",
+        "quantity" : 30,
         "photo": "https://wellnesscore.eu/wp-content/uploads/2022/01/10813.MAIN_-1.png"
       },
       {
@@ -105,6 +113,7 @@
         "date": "2023-06-28",
         "typeFood": "Dogfood",
         "countryOfOrigin": "USA",
+        "quantity" : 12,
         "photo": "https://www.jakespetsupply.com/cdn/shop/products/ultra-holistic-dry-food-kibble_x700.jpg?v=1519651199"
       },
       {
@@ -117,6 +126,7 @@
         "date": "2023-06-28",
         "typeFood": "Dogfood",
         "countryOfOrigin": "USA",
+        "quantity" : 22,
         "photo": "https://i5.walmartimages.com/asr/01947254-4c39-4269-a7ab-6b2e342bc02f.5d166991b80146792605fb2e3e8637c3.jpeg"
       },
       {
@@ -128,6 +138,7 @@
         "price": 15.5,
         "date": "2023-06-28",
         "typeFood": "Catfood",
+        "quantity" : 10,
         "countryOfOrigin": "France, Poland",
         "photo": "https://cdn.royalcanin-weshare-online.io/vGk5a2QBG95Xk-RBWNnX/v242/packshot-mini-ad-shn17?w=420&fm=jpg&auto=compress"
       },
@@ -141,6 +152,7 @@
         "date": "2023-06-28",
         "typeFood": "Catfood",
         "countryOfOrigin": "USA",
+        "quantity" : 11,
         "photo": "https://m.media-amazon.com/images/I/71cAOg4XVPL.jpg"
       },
       {
@@ -153,6 +165,7 @@
         "date": "2023-06-28",
         "typeFood": "Catfood",
         "countryOfOrigin": "USA",
+        "quantity" : 15,
         "photo": "https://images.prom.ua/4527007182_pro-plan-original.jpg"
       },
       {
@@ -165,6 +178,7 @@
         "date": "2023-06-28",
         "typeFood": "Catfood",
         "countryOfOrigin": "USA",
+        "quantity" : 16,
         "photo": "https://i5.walmartimages.com/asr/15b33a74-a44b-4306-95d3-4ede280c7ad1.96db39145b8c08599e04d0a3f7bc81f9.jpeg"
       },
       {
@@ -177,6 +191,7 @@
         "date": "2023-06-28",
         "typeFood": "Catfood",
         "countryOfOrigin": "France, Poland",
+        "quantity" : 5,
         "photo": "https://cdn.royalcanin-weshare-online.io/XWkva2QBG95Xk-RBE9Mw/v376/16-kitten-ns-b1?fm=jpg&auto=compress"
       },
       {
@@ -189,6 +204,7 @@
         "date": "2023-06-28",
         "typeFood": "Catfood",
         "countryOfOrigin": "USA",
+        "quantity" : 9,
         "photo": "https://i5.walmartimages.com/seo/IAMS-PROACTIVE-HEALTH-Adult-Indoor-Weight-Hairball-Care-Dry-Cat-Food-with-Chicken-Turkey-3-5-lb-Bag_e6a2d665-d08e-40ac-953c-5a07aba160a8.caea5ce6979e7c6b66f5b116b8acdf41.jpeg"
       },
       {
@@ -201,6 +217,7 @@
         "date": "2023-06-28",
         "typeFood": "Catfood",
         "countryOfOrigin": "USA",
+        "quantity" : 12,
         "photo": "https://i5.walmartimages.com/asr/7f0fe95e-996f-4080-962f-09b88ca6e37e.14278d621f92c848f9db31c2ba9a4bb2.png"
       },
       {
@@ -213,6 +230,7 @@
         "date": "2023-06-28",
         "typeFood": "Catfood",
         "countryOfOrigin": "USA",
+        "quantity" : 22,
         "photo": "https://agwayct.com/cdn/shop/products/33913-1569855794_580x.jpg?v=1673986912"
       },
       {
@@ -225,6 +243,7 @@
         "date": "2023-06-28",
         "typeFood": "Catfood",
         "countryOfOrigin": "USA",
+        "quantity" : 7,
         "photo": "https://i5.walmartimages.com/asr/51f709e6-9a16-42d6-9999-2f911c7e9426.4316e8e2dc1450568952b7be55d0e28f.jpeg"
       },
       {
@@ -237,6 +256,7 @@
         "date": "2023-06-28",
         "typeFood": "Catfood",
         "countryOfOrigin": "USA",
+        "quantity" : 14,
         "photo": "https://rosedalemills.com/cdn/shop/products/37073-1488384440_1200x1200.jpg?v=1668460322"
       }
     ]

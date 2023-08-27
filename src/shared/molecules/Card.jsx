@@ -43,7 +43,7 @@ const TypeFood = styled(Price)`
 
 const AddToCartButton = styled.button`
   display: flex;
-  background-color: #333;
+  background-color: #61ac65;;
   color: #fff;
   padding: 8px 12px;
   border: none;
@@ -93,8 +93,8 @@ export const Card = ({ product, addToCart, cartItems }) => {
 
   const handleCardClick = () => {
     navigate.push({
-      pathname: '/products', // Replace with your actual product page path
-      state: { productId: product.id }, // Send the product ID to the product page
+      pathname: '/products', 
+      state: { productId: product.id }, 
     });
   };
   return (

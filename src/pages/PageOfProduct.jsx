@@ -32,6 +32,14 @@ const ImgComponent = styled.img`
   margin-top: 3px;
 `;
 
+const ImgComponentOver = styled.img`
+  width: 235px;
+  height: 267px;
+  margin-right: 1px;
+  margin-top: 3px;
+  filter: grayscale(100%);
+`;
+
 const ButtonContainer = styled.div`
 display: flex;
 gap: 10px;
@@ -95,8 +103,11 @@ const Price = styled.p`
 const TypeFood = styled(Price)`
 `
 
+
+
+
 export const PageOfProduct = ({ addToCart, removeFromCart, cartItems}) => {
-  
+    
     const location = useLocation();
 
 
@@ -106,7 +117,7 @@ export const PageOfProduct = ({ addToCart, removeFromCart, cartItems}) => {
       removeFromCart(product);
     };
 
-    const total = cartItems.reduce((acc, item) => acc + (item.quantity * item.price), 0);
+    const total = cartItems.reduce((acc, item) => acc + (item.amount * item.price), 0);
   const roundedTotal = total.toFixed(2);
 
   let sumOfCountProduct = 0; 
@@ -114,19 +125,29 @@ export const PageOfProduct = ({ addToCart, removeFromCart, cartItems}) => {
   product.forEach(item => {
     const cartItem = cartItems.find(cartItem => cartItem.id === item.id);
     if (cartItem) {
-      sumOfCountProduct += cartItem.quantity ;
+      sumOfCountProduct += cartItem.amount ;
     }
   });
   
+
+
+
     return (
       <CartContainer>
         <h1>Product page</h1>
 
         <CartList>  
+
         {product.map((item, index) => (
           <div key={index}>
            <h3>{item.name}</h3>
-           <ImgComponent src={item.photo} alt={item.name}/>
+           {item.quantity > 0 ? (
+              <ImgComponent src={item.photo} alt={item.name}/>
+            ) : (
+              <ImgComponentOver src={item.photo} alt={item.name} style={{ color: 'gray' }}/>
+
+            )}
+           
            <div>{item.class}</div>
            <div>{item.breed}</div>
            <div>{item.weight}</div>
@@ -139,10 +160,11 @@ export const PageOfProduct = ({ addToCart, removeFromCart, cartItems}) => {
             <ItemQuantity>{sumOfCountProduct}</ItemQuantity>
 
             <Price>{item.price}</Price>
+            
             </div>
             ))}
       </CartList>
-      <Total>Total:${roundedTotal.toLocaleString()}</Total>
+      <Total>Total: ${roundedTotal.toLocaleString()}</Total>
 
       </CartContainer>
     );
