@@ -1,10 +1,11 @@
 
 import React, { useEffect, useRef, useState } from 'react';
-import { ButtonToGoProduct } from '../buttons/ButtonToGoProduct';
+
 
 //Style
 import styled from 'styled-components';
-
+import { ButtonToCartFromInput } from '../buttons/ButtonToCartFromInput';
+import { useNavigate } from 'react-router-dom';
 
 
 const SearchInput = styled.input`
@@ -14,12 +15,13 @@ const SearchInput = styled.input`
   border-radius: 5px;
   margin-right: 15px;
   flex-shrink: 0;
+  position: relative;
 
   @media (max-width: 768px, max-height: 360px) {
     margin-right: 0;
     margin-bottom: 15px;
   }
-`;
+`
 
 const SearchResults = styled.div`
   position: absolute;
@@ -29,24 +31,25 @@ const SearchResults = styled.div`
   border: 1px solid #ccc;
   border-radius: 5px;
   overflow-y: auto;
-  max-height: 530px;
+  max-height: calc(89vh - 67px);
   width: 300px;
   top: 67px;
   left: 411px;
   
-
   @media (max-width: 768px), (max-height: 360px) {
-    width: 166%;
-position: static;
-width: 339px;
-margin-top: -8px;
+  position: static;
+  width: 339px;
+  height: 629px;
+  margin-top: -8px;
+  overflow-y: scroll;
+
   }
-`;
+`
 
 const CloseButton = styled.button`
-  position: fixed;
-  top: 80px;
-  right: 694px;
+  position: sticky;
+  top: 6px;
+  left: 248px;
   cursor: pointer;
   width: 20px;
   height: 20px;
@@ -67,13 +70,13 @@ const CloseButton = styled.button`
   &:active {
     transform: translateY(2px);
   }
-
   @media (max-width: 768px), (max-height: 360px) {
-    top: 153px;
-    right: 23px;
-    position: absolute; 
+    top: 3%;
+    left: 300px;
+    position: sticky; 
+
   }
-`;
+`
 
 
 const Img = styled.img`
@@ -89,18 +92,16 @@ const ResultItem = styled.div`
   &:hover {
     background-color: #f2f2f2;
   }
-`;
+`
 
 
-
-
-export const InputSearch = ({ productsData }) => {
-  const [input, setInput] = useState('');
+export const InputSearch = ({ productsData, addToCart}) => {
+  const [input, setInput] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [showResults, setShowResults] = useState(false);
   const searchContainerRef = useRef(null);
-  const [showModal, setShowModal] = useState(false);
 
+ 
 
   const handleSearch = (value) => {
     setInput(value);
@@ -109,7 +110,6 @@ export const InputSearch = ({ productsData }) => {
     );
 
     if (value.length >= 3 && filteredProducts.length > 0) {
-     
       setSearchResults(filteredProducts);
       setShowResults(true);
     } else {
@@ -121,23 +121,42 @@ export const InputSearch = ({ productsData }) => {
   const handleSelectResult = (name) => {
     setInput(name);
     setShowResults(false);
-    setShowModal(true);
-    setInput('');
+    setInput("");
   };
 
   const handleOutsideClick = (e) => {
-    if (searchContainerRef.current && !searchContainerRef.current.contains(e.target)) {
+    if (
+      searchContainerRef.current &&
+      !searchContainerRef.current.contains(e.target)
+    ) {
       setShowResults(false);
     }
   };
 
   useEffect(() => {
-    document.addEventListener('mousedown', handleOutsideClick);
+    if (showResults) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    document.addEventListener("mousedown", handleOutsideClick);
 
     return () => {
-      document.removeEventListener('mousedown', handleOutsideClick);
+      document.body.style.overflow = "auto";
+      document.removeEventListener("mousedown", handleOutsideClick);
     };
-  }, []);
+  }, [showResults]);
+
+  const navigate = useNavigate();
+
+  const handleButtonClick = (id) => {
+    navigate(`/products`, {
+      state: {
+        productId: id,
+      },
+    });
+  };
 
   return (
     <>
@@ -147,20 +166,27 @@ export const InputSearch = ({ productsData }) => {
         value={input}
         onChange={(e) => handleSearch(e.target.value)}
       />
+
       {showResults && searchResults.length > 0 && (
         <SearchResults ref={searchContainerRef}>
+          <CloseButton onClick={() => setShowResults(false)}>х</CloseButton>
           {searchResults.map((product, index) => (
-            <ResultItem key={index} onClick={() => handleSelectResult(product.name)}>
+            <div onClick={() => handleButtonClick(product.id)}>
+
+            <ResultItem
+              key={index}
+              onClick={() => handleSelectResult(product.name)}
+            >
               <Img src={product.photo} alt={product.name} />
               {product.name}
-              <ButtonToGoProduct
+              <ButtonToCartFromInput
+                
+                addToCart={addToCart}
                 product={product}
-                onClose={() => setShowModal(false)}
               />
             </ResultItem>
+            </div>
           ))}
-            <CloseButton onClick={() => setShowResults(false)}>х</CloseButton>
-
         </SearchResults>
       )}
     </>

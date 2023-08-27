@@ -42,7 +42,7 @@ const LogoWrapper = styled.div`
   }
 `;
 
-export const Header = () => {
+export const Header = ({addToCart}) => {
 
  
   return (
@@ -50,7 +50,7 @@ export const Header = () => {
       <LogoWrapper>
         <Logo />
         <ButtonHomePage />
-        <InputSearch productsData={productsData}/>
+        <InputSearch productsData={productsData} addToCart={addToCart}/>
       </LogoWrapper>
       <Navigation>
         <ContactsButton />
