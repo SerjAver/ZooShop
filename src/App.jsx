@@ -25,7 +25,7 @@ function App() {
       setProductIsOver([...productIsOver]);
     } 
     else if (selectedItem.quantity > 0) {
-      setCartItems((prevItems) => [...prevItems, { ...product, amount: 0 }]);
+      setCartItems((prevItems) => [...prevItems, { ...product, amount: 1 }]);
       selectedItem.quantity -= 1;
       setProductIsOver([...productIsOver]);
     }
@@ -46,18 +46,18 @@ function App() {
  
   const removeFromCart = (product) => {
     setCartItems((prevItems) => {
+      let hasChanged = false; 
       const updatedItems = prevItems.map((item) => {
         if (item.name === product.name) {
           if (item.amount > 0) {
+            hasChanged = true; 
             return { ...item, amount: item.amount - 1 };
           }
         }
         return item;
       });
   
-      const removedItems = updatedItems.filter((item) => item.amount > 0);
-  
-      if (removedItems.length === updatedItems.length) {
+      if (hasChanged) {
         const updatedProductIsOver = productIsOver.map((item) => {
           if (item.name === product.name) {
             return { ...item, quantity: item.quantity + 1 };
@@ -68,7 +68,7 @@ function App() {
         setProductIsOver(updatedProductIsOver);
       }
   
-      return removedItems;
+      return updatedItems;
     });
   };
  
