@@ -79,6 +79,14 @@ background-color: #333;
   margin-top: 3px;
 `;
 
+const ImgComponentOver = styled.img`
+  width: 235px;
+  height: 267px;
+  margin-right: 1px;
+  margin-top: 3px;
+  filter: grayscale(100%);
+`;
+
 
 export const CartPage = ({cartItems, addToCart, removeFromCart, handleClearCart}) => {
   const total = cartItems.reduce((acc, item) => acc + (item.amount * item.price), 0);

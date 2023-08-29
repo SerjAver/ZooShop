@@ -144,7 +144,7 @@ export const PageOfProduct = ({ addToCart, removeFromCart, cartItems}) => {
            {item.quantity > 0 ? (
               <ImgComponent src={item.photo} alt={item.name}/>
             ) : (
-              <ImgComponentOver src={item.photo} alt={item.name} style={{ color: 'gray' }}/>
+              <ImgComponentOver src={item.photo} alt={item.name} style={{ filter: 'grayscale(100%)' }}/>
 
             )}
            
