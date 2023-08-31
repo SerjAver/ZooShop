@@ -4,6 +4,8 @@ import { useLocation } from 'react-router-dom';
 import productsData from '../../animalProducts.json'
 //styles
 import styled from 'styled-components';
+import { ToastContainer, toast } from 'react-toastify';
+   import 'react-toastify/dist/ReactToastify.css';
 
 
 const CartContainer = styled.div`
@@ -109,7 +111,7 @@ const TypeFood = styled(Price)`
 export const PageOfProduct = ({ addToCart, removeFromCart, cartItems}) => {
     
     const location = useLocation();
-
+  
 
      const product = productsData.filter(p => p.id === location.state.productId)
 
@@ -144,7 +146,9 @@ export const PageOfProduct = ({ addToCart, removeFromCart, cartItems}) => {
            {item.quantity > 0 ? (
               <ImgComponent src={item.photo} alt={item.name}/>
             ) : (
-              <ImgComponentOver src={item.photo} alt={item.name} style={{ filter: 'grayscale(100%)' }}/>
+              <>
+              <ImgComponentOver src={item.photo} alt={item.name} style={{ color: 'grey' }}/>
+            </>
 
             )}
            
@@ -154,8 +158,9 @@ export const PageOfProduct = ({ addToCart, removeFromCart, cartItems}) => {
            <TypeFood>{item.typeFood}</TypeFood>
            <div>{item.countryOfOrigin}</div>
            <ButtonContainer>
-              <AddButton onClick={() => addToCart(item)}>+</AddButton>
-              <RedButton onClick={() => handleRemoveItem(item)}>-</RedButton>
+           <ToastContainer />
+              <AddButton onClick={() => {addToCart(item); toast("Product added to cart");}}>+</AddButton>
+              <RedButton onClick={() => {handleRemoveItem(item); toast("Item removed from cart")}}>-</RedButton>
             </ButtonContainer>
             <ItemQuantity>{sumOfCountProduct}</ItemQuantity>
 
