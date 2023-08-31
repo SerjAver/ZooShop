@@ -1,5 +1,6 @@
 
 import React from 'react';
+
 // Styles
 import styled from 'styled-components';
 
@@ -98,6 +99,7 @@ export const CartPage = ({cartItems, addToCart, removeFromCart, handleClearCart}
 
 
 
+
   return (
     <CartContainer>
       <h1>Cart</h1>
@@ -116,7 +118,9 @@ export const CartPage = ({cartItems, addToCart, removeFromCart, handleClearCart}
           </div>
         ))}
       </CartList>
+      <>
         <ClearButton onClick={handleClearCart}>Clear cart</ClearButton>
+      </>
         <Total>Total:${roundedTotal.toLocaleString()}</Total>
     </CartContainer>
   );
