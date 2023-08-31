@@ -4,12 +4,14 @@ import productsData from '../animalProducts.json'
 // Components
 import {  Header }  from 'shared';
 import { HomePage, CartPage, ContactsPage, PageOfProduct} from 'pages'
-
+import { ToastContainer, toast } from 'react-toastify';
+   import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
   const [productIsOver, setProductIsOver] = useState(productsData)
+
 
 
 
@@ -22,13 +24,14 @@ function App() {
       updatedItems[existingItemIndex].amount += 1;
       selectedItem.quantity -= 1;
       setCartItems(updatedItems);
-      setProductIsOver([...productIsOver]);
+      setProductIsOver([...productIsOver, updatedItems]);
     } 
     else if (selectedItem.quantity > 0) {
       setCartItems((prevItems) => [...prevItems, { ...product, amount: 1 }]);
       selectedItem.quantity -= 1;
       setProductIsOver([...productIsOver]);
     }
+    return
   };
 
 
