@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 //components
-import { ShoppingCartOutlined } from '@ant-design/icons';
+import { ShoppingCartOutlined } from "@ant-design/icons";
 //style
-import  styled  from 'styled-components';
-
+import styled from "styled-components";
+import { useHandleCart } from "hooks";
 
 const StyledShoppingCartOutlined = styled.button`
   position: relative;
@@ -30,25 +30,19 @@ const StyledShoppingCartOutlined = styled.button`
   }
 `;
 
-
-export const ButtonToCartFromInput = ({product, addToCart }) => {
-
-
-    const handleButtonClickInInput = () => {
-        addToCart(product); 
-      };
-    return (
-        <div>
-             <StyledShoppingCartOutlined>
-                <ShoppingCartOutlined onClick={(e) => {
-                  e.stopPropagation();
-                  e.preventDefault();
-                  handleButtonClickInInput()
-                }}/>
-              </StyledShoppingCartOutlined>
-        </div>
-    );
+export const ButtonToCartFromInput = ({ product }) => {
+  const { addToCart } = useHandleCart();
+  return (
+    <div>
+      <StyledShoppingCartOutlined>
+        <ShoppingCartOutlined
+          onClick={(e) => {
+            e.stopPropagation();
+            e.preventDefault();
+            addToCart(product);
+          }}
+        />
+      </StyledShoppingCartOutlined>
+    </div>
+  );
 };
-
-
-

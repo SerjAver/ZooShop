@@ -1,36 +1,30 @@
-
 // Assets
-import { useNavigate } from 'react-router-dom';
-import cartIcon from '../../assets/Cart.png';
+import { useNavigate } from "react-router-dom";
+import cartIcon from "../../assets/Cart.png";
 // Styles
-import styled from 'styled-components';
+import styled from "styled-components";
+import { useHandleCart } from "hooks";
 
 const CardDesktop = styled.div`
-  display: grid;
-  grid-template-columns: 1fr;
-
   padding: 20px;
   border-radius: 23px;
   height: 100%;
   transition: box-shadow 0.2s;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-  
   &:hover {
     box-shadow: 0 0 5px rgba(54, 162, 155, 1);
-
     button {
       display: block;
     }
-    
   }
-  `;
+`;
 
 const Title = styled.h3`
   font-size: 18px;
   margin-bottom: 10px;
   margin-top: 18px;
   min-width: 220px;
-  min-height: 69px; 
+  min-height: 69px;
 `;
 
 const Price = styled.p`
@@ -38,23 +32,19 @@ const Price = styled.p`
   margin-bottom: 10px;
 `;
 
-const TypeFood = styled(Price)`
-`
+const TypeFood = styled(Price)``;
 
 const AddToCartButton = styled.button`
   display: flex;
-  background-color: #61ac65;;
+  background-color: #61ac65;
   color: #fff;
   padding: 8px 12px;
   border: none;
   border-radius: 15px;
-  margin-right: 105px;
-  margin-bottom: 5px;
-  margin-top: 18px;
   cursor: pointer;
-  max-width: 150px; 
-  max-height: 31px; 
-  text-align: center; 
+  max-width: 150px;
+  max-height: 31px;
+  text-align: center;
   justify-content: center;
   &:hover {
     background-color: teal;
@@ -64,53 +54,53 @@ const AddToCartButton = styled.button`
   }
 `;
 
-
 const CartIcon = styled.img`
   width: 24px;
   height: 24px;
-  margin-right: 7px;
-  margin-top: 9px;
 `;
 
-
 const Photo = styled.img`
-width: 235px;
-height: 267px;
-margin-right: 1px;
-margin-top: 3px;
+  width: 235px;
+  height: 267px;
+  margin-right: 1px;
+  margin-top: 3px;
+`;
 
-`
+const ButtonsSection = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+`;
 
-export const Card = ({ product, addToCart, cartItems }) => {
+export const Card = ({ product }) => {
   const navigate = useNavigate();
-
-
+  const { cartItems, addToCart } = useHandleCart();
   const isInCart = cartItems.some((item) => item.id === product.id);
-  const clickAddToCart = () => {
-    addToCart(product);
-  };
-
 
   const handleCardClick = () => {
     navigate.push({
-      pathname: '/products', 
-      state: { productId: product.id }, 
+      pathname: "/products",
+      state: { productId: product.id },
     });
   };
   return (
     <>
-      <CardDesktop onClick={()=> handleCardClick}>
-        <Photo src={product.photo} alt={product.name}/>
+      <CardDesktop onClick={() => handleCardClick}>
+        <Photo src={product.photo} alt={product.name} />
         <Title>{product.name}</Title>
-        <br/>
+        <br />
         <Price>{product.price}</Price>
         <TypeFood>{product.typeFood}</TypeFood>
-        <AddToCartButton onClick={clickAddToCart}>
-          Add to Cart
-        </AddToCartButton>
-          {isInCart && (
-            <CartIcon src={cartIcon} alt="Cart" />
-          )}
+        <p></p>In stock: {product.quantity}
+        <ButtonsSection>
+          <AddToCartButton
+            onClick={() => addToCart(product)}
+          >
+            Add to Cart
+          </AddToCartButton>
+          {isInCart && <CartIcon src={cartIcon} alt="Cart" />}
+        </ButtonsSection>
       </CardDesktop>
     </>
   );

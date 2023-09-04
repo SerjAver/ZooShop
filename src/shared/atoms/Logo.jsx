@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 // Styles
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const StyleLogo = styled.h1`
   font-size: 42px;
@@ -9,7 +9,5 @@ export const StyleLogo = styled.h1`
 `;
 
 export const Logo = () => {
-    return (
-        <StyleLogo>My ZooShop</StyleLogo>
-    );
+  return <StyleLogo>My ZooShop</StyleLogo>;
 };
