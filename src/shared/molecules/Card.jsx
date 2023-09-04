@@ -94,9 +94,7 @@ export const Card = ({ product }) => {
         <TypeFood>{product.typeFood}</TypeFood>
         <p></p>In stock: {product.quantity}
         <ButtonsSection>
-          <AddToCartButton
-            onClick={() => addToCart(product)}
-          >
+          <AddToCartButton onClick={() => addToCart(product)}>
             Add to Cart
           </AddToCartButton>
           {isInCart && <CartIcon src={cartIcon} alt="Cart" />}

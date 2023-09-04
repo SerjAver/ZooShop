@@ -102,7 +102,8 @@ export const PageOfProduct = ({ productsData }) => {
   const location = useLocation();
   const { cartItems, addToCart, removeFromCart } = useHandleCart();
   const product = productsData.filter((p) => p.id === location.state.productId);
-  const total = cartItems.filter((c) => c.id === product[0].id).length * product[0].price;
+  const total =
+    cartItems.filter((c) => c.id === product[0].id).length * product[0].price;
   const roundedTotal = total.toFixed(2);
 
   let sumOfCountProduct = 0;
@@ -143,8 +144,11 @@ export const PageOfProduct = ({ productsData }) => {
               <ToastContainer />
               <AddButton
                 onClick={() => {
-                  if (cartItems.filter((c) => c.id === item.id).length < item.quantity) {
-                    addToCart(item)
+                  if (
+                    cartItems.filter((c) => c.id === item.id).length <
+                    item.quantity
+                  ) {
+                    addToCart(item);
                     toast("Product added to cart");
                   }
                 }}
