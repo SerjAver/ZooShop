@@ -1,10 +1,14 @@
 import React from "react";
 // Components
-import { ButtonHomePage, ContactsButton, ShoppingCartButton, InputSearch, Logo } from "shared";
+import {
+  ButtonHomePage,
+  ContactsButton,
+  ShoppingCartButton,
+  InputSearch,
+  Logo,
+} from "shared";
 // Styles
 import styled from "styled-components";
-//Json
-import productsData from '../../../animalProducts.json'
 
 const HeaderContainer = styled.header`
   display: flex;
@@ -42,15 +46,13 @@ const LogoWrapper = styled.div`
   }
 `;
 
-export const Header = ({addToCart}) => {
-
- 
+export const Header = ({ productsData = [] }) => {
   return (
     <HeaderContainer>
       <LogoWrapper>
         <Logo />
         <ButtonHomePage />
-        <InputSearch productsData={productsData} addToCart={addToCart}/>
+        <InputSearch productsData={productsData} />
       </LogoWrapper>
       <Navigation>
         <ContactsButton />

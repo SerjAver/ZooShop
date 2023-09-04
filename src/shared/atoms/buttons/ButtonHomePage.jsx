@@ -1,7 +1,7 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import { NavLink } from "react-router-dom";
 // Styles
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const StyleNavLink = styled(NavLink)`
   display: flex;
@@ -14,11 +14,6 @@ export const StyleNavLink = styled(NavLink)`
   }
 `;
 
-
-
-
 export const ButtonHomePage = () => {
-    return (
-        <StyleNavLink to="/HomePage">HomePage</StyleNavLink>
-    );
+  return <StyleNavLink to="/HomePage">HomePage</StyleNavLink>;
 };
