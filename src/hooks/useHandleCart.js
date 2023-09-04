@@ -1,10 +1,9 @@
-import useLocalStorageState from 'use-local-storage-state'
-import _ from 'lodash'
+import useLocalStorageState from "use-local-storage-state";
 
 export const useHandleCart = () => {
-  const [cartItems, setCartItems] = useLocalStorageState('cartItems', {
-    defaultValue: []
-  })
+  const [cartItems, setCartItems] = useLocalStorageState("cartItems", {
+    defaultValue: [],
+  });
 
   const addToCart = (item) => {
     setCartItems([...cartItems, item]);
