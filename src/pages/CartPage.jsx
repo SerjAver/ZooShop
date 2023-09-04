@@ -78,7 +78,8 @@ const ImgComponent = styled.img`
 `;
 
 export const CartPage = () => {
-  const { cartItems, removeAllFromCart, addToCart, removeFromCart } = useHandleCart();
+  const { cartItems, removeAllFromCart, addToCart, removeFromCart } =
+    useHandleCart();
   const total = cartItems.reduce(
     (acc, item) =>
       acc + cartItems.filter((c) => c.id === item.id).length * item.price,
