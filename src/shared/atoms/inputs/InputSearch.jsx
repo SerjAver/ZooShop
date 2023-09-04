@@ -1,12 +1,9 @@
-
-import React, { useEffect, useRef, useState } from 'react';
-
-
-//Style
-import styled from 'styled-components';
-import { ButtonToCartFromInput } from '../buttons/ButtonToCartFromInput';
-import { useNavigate } from 'react-router-dom';
-
+import React, { useEffect, useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
+// Components
+import { ButtonToCartFromInput } from "../buttons/ButtonToCartFromInput";
+// Styles
+import styled from "styled-components";
 
 const SearchInput = styled.input`
   display: flex;
@@ -21,7 +18,7 @@ const SearchInput = styled.input`
     margin-right: 0;
     margin-bottom: 15px;
   }
-`
+`;
 
 const SearchResults = styled.div`
   position: absolute;
@@ -35,16 +32,15 @@ const SearchResults = styled.div`
   width: 300px;
   top: 67px;
   left: 411px;
-  
-  @media (max-width: 768px), (max-height: 360px) {
-  position: static;
-  width: 339px;
-  height: 629px;
-  margin-top: -8px;
-  overflow-y: scroll;
 
+  @media (max-width: 768px), (max-height: 360px) {
+    position: static;
+    width: 339px;
+    height: 629px;
+    margin-top: -8px;
+    overflow-y: scroll;
   }
-`
+`;
 
 const CloseButton = styled.button`
   position: sticky;
@@ -73,17 +69,15 @@ const CloseButton = styled.button`
   @media (max-width: 768px), (max-height: 360px) {
     top: 3%;
     left: 300px;
-    position: sticky; 
-
+    position: sticky;
   }
-`
-
+`;
 
 const Img = styled.img`
-width: 20%;
-height: 31%;
-padding: 8px;
-`
+  width: 20%;
+  height: 31%;
+  padding: 8px;
+`;
 
 const ResultItem = styled.div`
   padding: 5px;
@@ -92,21 +86,18 @@ const ResultItem = styled.div`
   &:hover {
     background-color: #f2f2f2;
   }
-`
+`;
 
-
-export const InputSearch = ({ productsData, addToCart}) => {
+export const InputSearch = ({ productsData }) => {
   const [input, setInput] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [showResults, setShowResults] = useState(false);
   const searchContainerRef = useRef(null);
 
- 
-
   const handleSearch = (value) => {
     setInput(value);
     const filteredProducts = productsData.filter((product) =>
-      product.name.toLowerCase().includes(value.toLowerCase())
+      product.name.toLowerCase().includes(value.toLowerCase()),
     );
 
     if (value.length >= 3 && filteredProducts.length > 0) {
@@ -171,20 +162,15 @@ export const InputSearch = ({ productsData, addToCart}) => {
         <SearchResults ref={searchContainerRef}>
           <CloseButton onClick={() => setShowResults(false)}>х</CloseButton>
           {searchResults.map((product, index) => (
-            <div onClick={() => handleButtonClick(product.id)}>
-
-            <ResultItem
-              key={index}
-              onClick={() => handleSelectResult(product.name)}
-            >
-              <Img src={product.photo} alt={product.name} />
-              {product.name}
-              <ButtonToCartFromInput
-                
-                addToCart={addToCart}
-                product={product}
-              />
-            </ResultItem>
+            <div key={index} onClick={() => handleButtonClick(product.id)}>
+              <ResultItem
+                key={index}
+                onClick={() => handleSelectResult(product.name)}
+              >
+                <Img src={product.photo} alt={product.name} />
+                {product.name}
+                <ButtonToCartFromInput product={product} />
+              </ResultItem>
             </div>
           ))}
         </SearchResults>
@@ -192,5 +178,3 @@ export const InputSearch = ({ productsData, addToCart}) => {
     </>
   );
 };
-
-
