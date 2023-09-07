@@ -141,7 +141,18 @@ export const PageOfProduct = ({ productsData }) => {
             <TypeFood>{item.typeFood}</TypeFood>
             <div>{item.countryOfOrigin}</div>
             <ButtonContainer>
-              <ToastContainer />
+              <ToastContainer
+                position="top-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+              />
               <AddButton
                 onClick={() => {
                   if (
@@ -149,7 +160,17 @@ export const PageOfProduct = ({ productsData }) => {
                     item.quantity
                   ) {
                     addToCart(item);
-                    toast("Product added to cart");
+                    toast.success("Product added to cart", {
+                      position: "bottom-right",
+                      autoClose: 3000,
+                      hideProgressBar: false,
+                      closeOnClick: true,
+                      pauseOnHover: true,
+                      draggable: true,
+                      progress: undefined,
+                      theme: "colored",
+                      height: "50px",
+                    });
                   }
                 }}
               >
@@ -159,7 +180,16 @@ export const PageOfProduct = ({ productsData }) => {
                 onClick={() => {
                   if (cartItems.filter((c) => c.id === item.id).length) {
                     removeFromCart(item);
-                    toast("Item removed from cart");
+                    toast.error("Item removed from cart", {
+                      position: "bottom-right",
+                      autoClose: 3000,
+                      hideProgressBar: false,
+                      closeOnClick: true,
+                      pauseOnHover: true,
+                      draggable: true,
+                      progress: 0,
+                      theme: "colored",
+                    });
                   }
                 }}
               >
