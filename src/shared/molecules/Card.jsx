@@ -36,7 +36,7 @@ const TypeFood = styled(Price)``;
 
 const AddToCartButton = styled.button`
   display: flex;
-  background-color: #61ac65;
+  background-color: ${(props) => (props.disabled ? "grey" : "#61ac65")};
   color: #fff;
   padding: 8px 12px;
   border: none;
@@ -47,10 +47,11 @@ const AddToCartButton = styled.button`
   text-align: center;
   justify-content: center;
   &:hover {
-    background-color: teal;
+    background-color: ${(props) => (props.disabled ? "grey" : "teal")};
   }
   &:active {
-    transform: translateY(2px);
+    transform: ${(props) =>
+      props.disabled ? "translateY(0px)" : "translateY(2px)"};
   }
 `;
 
@@ -64,6 +65,13 @@ const Photo = styled.img`
   height: 267px;
   margin-right: 1px;
   margin-top: 3px;
+`;
+const ImgComponentOver = styled.img`
+  width: 235px;
+  height: 267px;
+  margin-right: 1px;
+  margin-top: 3px;
+  filter: grayscale(100%);
 `;
 
 const ButtonsSection = styled.div`
@@ -87,14 +95,29 @@ export const Card = ({ product }) => {
   return (
     <>
       <CardDesktop onClick={() => handleCardClick}>
-        <Photo src={product.photo} alt={product.name} />
+        {product.quantity > 0 ? (
+          <Photo src={product.photo} alt={product.name} />
+        ) : (
+          <>
+            <ImgComponentOver
+              src={product.photo}
+              alt={product.name}
+              style={{ color: "grey" }}
+            />
+          </>
+        )}
         <Title>{product.name}</Title>
         <br />
         <Price>{product.price}</Price>
         <TypeFood>{product.typeFood}</TypeFood>
         <p></p>In stock: {product.quantity}
         <ButtonsSection>
-          <AddToCartButton onClick={() => addToCart(product)}>
+          <AddToCartButton
+            disabled={product.quantity === 0}
+            onClick={() => {
+              product.quantity > 0 ? addToCart(product) : false;
+            }}
+          >
             Add to Cart
           </AddToCartButton>
           {isInCart && <CartIcon src={cartIcon} alt="Cart" />}

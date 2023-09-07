@@ -79,6 +79,13 @@ const Img = styled.img`
   padding: 8px;
 `;
 
+const ImgComponentOver = styled.img`
+  width: 20%;
+  height: 31%;
+  padding: 8px;
+  filter: grayscale(100%);
+`;
+
 const ResultItem = styled.div`
   padding: 5px;
   cursor: pointer;
@@ -162,12 +169,31 @@ export const InputSearch = ({ productsData }) => {
         <SearchResults ref={searchContainerRef}>
           <CloseButton onClick={() => setShowResults(false)}>х</CloseButton>
           {searchResults.map((product, index) => (
-            <div key={index} onClick={() => handleButtonClick(product.id)}>
+            <div
+              key={index}
+              onClick={(e) => {
+                product.quantity > 0
+                  ? handleButtonClick(product.id)
+                  : e.stopPropagation();
+                e.preventDefault();
+              }}
+            >
               <ResultItem
                 key={index}
                 onClick={() => handleSelectResult(product.name)}
               >
-                <Img src={product.photo} alt={product.name} />
+                {product.quantity > 0 ? (
+                  <Img src={product.photo} alt={product.name} />
+                ) : (
+                  <>
+                    <ImgComponentOver
+                      src={product.photo}
+                      alt={product.name}
+                      style={{ color: "grey" }}
+                    />
+                  </>
+                )}
+
                 {product.name}
                 <ButtonToCartFromInput product={product} />
               </ResultItem>
