@@ -7,12 +7,25 @@ import { Header } from "shared";
 import { HomePage, CartPage, ContactsPage, PageOfProduct } from "pages";
 // Styles
 import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   const productsData = db || [];
   return (
     <>
       <BrowserRouter>
+      <ToastContainer
+                  position="top-right"
+                  autoClose={4000}
+                  hideProgressBar={false}
+                  newestOnTop={false}
+                  closeOnClick
+                  rtl={false}
+                  pauseOnFocusLoss
+                  draggable
+                  pauseOnHover
+                  theme="light"
+                />
         <Header productsData={productsData} />
         <Routes>
           <Route path="/" element={<HomePage productsData={productsData} />} />

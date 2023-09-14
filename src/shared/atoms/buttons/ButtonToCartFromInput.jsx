@@ -6,28 +6,33 @@ import styled from "styled-components";
 import { useHandleCart } from "hooks";
 
 const StyledShoppingCartOutlined = styled.button`
-  position: relative;
-  left: 236px;
-  top: 2px;
+position: relative;
+top: 22px;
   cursor: pointer;
-  width: 20px;
-  border-radius: 39%;
-  background-color: #afd0a8;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  color: #393930;
-  font-size: 16px;
-  font-weight: bold;
-  border: 1px solid black;
-  z-index: 2;
-  &:hover {
-    background-color: teal;
-    color: white;
-  }
-  &:active {
-    transform: translateY(2px);
-  }
+  width: 34px;
+  height: 33px;
+  border-radius: 36%;
+background: linear-gradient(135deg, #3498db, #2980b9);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-size: 24px;
+font-weight: bold;
+border: none;
+outline: none;
+transition: background 0.3s, transform 0.2s;
+z-index: 2;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+&:hover {
+  background: linear-gradient(135deg, #2980b9, #2574a9);
+}
+
+&:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
 `;
 
 export const ButtonToCartFromInput = ({ product }) => {

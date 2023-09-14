@@ -125,18 +125,6 @@ export const CartPage = () => {
               <ImgComponent src={item.photo} alt={item.name} />
               <p>{item.price}</p>
               <ButtonContainer>
-                <ToastContainer
-                  position="top-right"
-                  autoClose={5000}
-                  hideProgressBar={false}
-                  newestOnTop={false}
-                  closeOnClick
-                  rtl={false}
-                  pauseOnFocusLoss
-                  draggable
-                  pauseOnHover
-                  theme="light"
-                />
                 <AddButton
                   onClick={() => {
                     if (
