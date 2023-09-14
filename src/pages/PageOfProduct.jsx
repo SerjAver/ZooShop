@@ -141,18 +141,6 @@ export const PageOfProduct = ({ productsData }) => {
             <TypeFood>{item.typeFood}</TypeFood>
             <div>{item.countryOfOrigin}</div>
             <ButtonContainer>
-              <ToastContainer
-                position="top-right"
-                autoClose={5000}
-                hideProgressBar={false}
-                newestOnTop={false}
-                closeOnClick
-                rtl={false}
-                pauseOnFocusLoss
-                draggable
-                pauseOnHover
-                theme="light"
-              />
               <AddButton
                 onClick={() => {
                   if (
