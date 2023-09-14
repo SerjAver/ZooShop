@@ -43,55 +43,74 @@ const SearchResults = styled.div`
 `;
 
 const CloseButton = styled.button`
+position: sticky;
+top: 2px;
+
+cursor: pointer;
+width: 26px;
+  height: 26px;
+border-radius: 38%;
+background-color: #ff6b6b;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-size: 20px;
+font-weight: bold;
+border: none;
+outline: none;
+transition: background-color 0.3s, transform 0.2s;
+z-index: 1;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+&:hover {
+  background-color: #ff4f4f;
+}
+
+&:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+@media (max-width: 768px), (max-height: 360px) {
+
   position: sticky;
-  top: 6px;
-  left: 248px;
-  cursor: pointer;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #f7caa3;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  color: #393930;
-  font-size: 16px;
-  font-weight: bold;
-  border: 1px solid black;
-  z-index: 2;
-  &:hover {
-    background-color: teal;
-    color: white;
-  }
-  &:active {
-    transform: translateY(2px);
-  }
-  @media (max-width: 768px), (max-height: 360px) {
-    top: 3%;
-    left: 300px;
-    position: sticky;
-  }
+}
 `;
 
 const Img = styled.img`
-  width: 20%;
-  height: 31%;
-  padding: 8px;
+width: 36%;
+  height: 100%;
+
 `;
 
 const ImgComponentOver = styled.img`
-  width: 20%;
-  height: 31%;
-  padding: 8px;
+  width: 68%;
   filter: grayscale(100%);
 `;
 
 const ResultItem = styled.div`
   padding: 5px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 7px;
+  border: 1px solid #2ae10440;
+  border-radius: 9px;
+  height: 99px;
+  width: 276px;
+  transition: box-shadow 0.2s;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
 
   &:hover {
     background-color: #f2f2f2;
+    box-shadow: 0 0 5px rgba(54, 162, 155, 1);
+  }
+  @media (max-width: 768px), (max-height: 360px) {
+    height: 126px;
+  width: 333px;
+    
   }
 `;
 
