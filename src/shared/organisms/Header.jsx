@@ -1,12 +1,6 @@
 import React from "react";
 // Components
-import {
-  ButtonHomePage,
-  ContactsButton,
-  ShoppingCartButton,
-  InputSearch,
-  Logo,
-} from "shared";
+import { ContactsButton, ShoppingCartButton, InputSearch, Logo } from "shared";
 // Styles
 import styled from "styled-components";
 
@@ -51,7 +45,6 @@ export const Header = ({ productsData = [] }) => {
     <HeaderContainer>
       <LogoWrapper>
         <Logo />
-        <ButtonHomePage />
         <InputSearch productsData={productsData} />
       </LogoWrapper>
       <Navigation>
