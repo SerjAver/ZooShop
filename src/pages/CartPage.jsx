@@ -1,7 +1,7 @@
 import { useHandleCart } from "hooks";
 import React, { useState } from "react";
 
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 // Styles
 import styled from "styled-components";
 import "react-toastify/dist/ReactToastify.css";
