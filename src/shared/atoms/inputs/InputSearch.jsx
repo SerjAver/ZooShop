@@ -43,45 +43,45 @@ const SearchResults = styled.div`
 `;
 
 const CloseButton = styled.button`
-position: sticky;
-top: 2px;
-
-cursor: pointer;
-width: 26px;
-  height: 26px;
-border-radius: 38%;
-background-color: #ff6b6b;
-display: flex;
-align-items: center;
-justify-content: center;
-color: #fff;
-font-size: 20px;
-font-weight: bold;
-border: none;
-outline: none;
-transition: background-color 0.3s, transform 0.2s;
-z-index: 1;
-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
-&:hover {
-  background-color: #ff4f4f;
-}
-
-&:active {
-  transform: translateY(2px);
-  box-shadow: none;
-}
-
-@media (max-width: 768px), (max-height: 360px) {
-
   position: sticky;
-}
+  top: 2px;
+
+  cursor: pointer;
+  width: 26px;
+  height: 26px;
+  border-radius: 38%;
+  background-color: #ff6b6b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  transition:
+    background-color 0.3s,
+    transform 0.2s;
+  z-index: 1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    background-color: #ff4f4f;
+  }
+
+  &:active {
+    transform: translateY(2px);
+    box-shadow: none;
+  }
+
+  @media (max-width: 768px), (max-height: 360px) {
+    position: sticky;
+  }
 `;
 
 const Img = styled.img`
-width: 36%;
+  width: 36%;
   height: 100%;
-
 `;
 
 const ImgComponentOver = styled.img`
@@ -109,8 +109,7 @@ const ResultItem = styled.div`
   }
   @media (max-width: 768px), (max-height: 360px) {
     height: 126px;
-  width: 333px;
-    
+    width: 333px;
   }
 `;
 
