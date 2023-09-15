@@ -1,9 +1,9 @@
 // Assets
-import { useNavigate } from "react-router-dom";
 import cartIcon from "../../assets/Cart.png";
 // Styles
 import styled from "styled-components";
 import { useHandleCart } from "hooks";
+import { useNavigate } from "react-router-dom";
 
 const CardDesktop = styled.div`
   padding: 20px;
@@ -81,36 +81,46 @@ const ButtonsSection = styled.div`
   margin-top: 10px;
 `;
 
+const FormSection = styled.div`
+  cursor: pointer;
+`;
 export const Card = ({ product }) => {
-  const navigate = useNavigate();
   const { cartItems, addToCart } = useHandleCart();
   const isInCart = cartItems.some((item) => item.id === product.id);
-
-  const handleCardClick = () => {
-    navigate.push({
-      pathname: "/products",
-      state: { productId: product.id },
+  const navigate = useNavigate();
+  const handleCardClick = (id) => {
+    navigate(`/products`, {
+      state: {
+        productId: id,
+      },
     });
   };
+
   return (
     <>
-      <CardDesktop onClick={() => handleCardClick}>
-        {product.quantity > 0 ? (
-          <Photo src={product.photo} alt={product.name} />
-        ) : (
-          <>
-            <ImgComponentOver
-              src={product.photo}
-              alt={product.name}
-              style={{ color: "grey" }}
-            />
-          </>
-        )}
-        <Title>{product.name}</Title>
-        <br />
-        <Price>{product.price}</Price>
-        <TypeFood>{product.typeFood}</TypeFood>
-        <p></p>In stock: {product.quantity}
+      <CardDesktop>
+        <FormSection
+          onClick={() => {
+            handleCardClick(product.id);
+          }}
+        >
+          {product.quantity > 0 ? (
+            <Photo src={product.photo} alt={product.name} />
+          ) : (
+            <>
+              <ImgComponentOver
+                src={product.photo}
+                alt={product.name}
+                style={{ color: "grey" }}
+              />
+            </>
+          )}
+          <Title>{product.name}</Title>
+          <br />
+          <Price>{product.price}</Price>
+          <TypeFood>{product.typeFood}</TypeFood>
+          <p></p>In stock: {product.quantity}
+        </FormSection>
         <ButtonsSection>
           <AddToCartButton
             disabled={product.quantity === 0}
