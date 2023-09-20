@@ -4,6 +4,7 @@ import cartIcon from "../../assets/Cart.png";
 import styled from "styled-components";
 import { useHandleCart } from "hooks";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const CardDesktop = styled.div`
   padding: 20px;
@@ -125,7 +126,20 @@ export const Card = ({ product }) => {
           <AddToCartButton
             disabled={product.quantity === 0}
             onClick={() => {
-              product.quantity > 0 ? addToCart(product) : false;
+              if (product.quantity > 0) {
+                addToCart(product);
+                toast.success("Product added to cart", {
+                  position: "bottom-right",
+                  autoClose: 3000,
+                  hideProgressBar: false,
+                  closeOnClick: true,
+                  pauseOnHover: true,
+                  draggable: true,
+                  progress: undefined,
+                  theme: "colored",
+                  height: "50px",
+                });
+              }
             }}
           >
             Add to Cart
