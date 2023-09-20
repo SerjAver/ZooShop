@@ -31,7 +31,7 @@ const SearchResults = styled.div`
   max-height: calc(89vh - 67px);
   width: 300px;
   top: 67px;
-  left: 411px;
+  left: 298px;
 
   @media (max-width: 768px), (max-height: 360px) {
     position: static;
