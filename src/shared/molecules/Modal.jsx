@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { toast } from "react-toastify";
 import * as yup from "yup";
+import { Formik } from "formik";
 // Styles
 import styled from "styled-components";
 import "react-toastify/dist/ReactToastify.css";
-import { Formik } from "formik";
+
+
 
 const Modal = styled.div`
   height: 100vh;
@@ -312,36 +314,3 @@ export const ModalWindow = ({ active, setActive }) => {
   );
 };
 
-{
-  /* <Form>
-          <Label>Name:</Label>
-          <Input type="text" />
-
-          <Label>Surname:</Label>
-          <Input type="text" />
-
-          <Label>Email:</Label>
-          <Input type="email" />
-
-          <Label>Phone:</Label>
-          <Input type="tel" />
-
-          <Button
-            onClick={(e) => {
-              e.preventDefault();
-              toast.success("The order is placed, wait for our call", {
-                position: "bottom-right",
-                autoClose: 3000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                theme: "colored",
-              });
-            }}
-          >
-            Make an order
-          </Button>
-        </Form> */
-}
