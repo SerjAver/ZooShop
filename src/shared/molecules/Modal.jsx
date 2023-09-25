@@ -150,7 +150,7 @@ const CloseButton = styled.button`
   }
 `;
 export const ModalWindow = ({ active, setActive }) => {
-  const [setShowResults] = useState(false);
+
   const phoneRegExp = /^[0-9]{10}$/;
   const validationsSchema = yup.object().shape({
     name: yup.string().typeError("there should be a line here").required("*"),
@@ -174,7 +174,7 @@ export const ModalWindow = ({ active, setActive }) => {
   });
   return (
     <Modal className={active ? "active" : ""} onClick={() => setActive(false)}>
-      <CloseButton onClick={() => setShowResults(false)}>х</CloseButton>
+      <CloseButton onClick={() => setActive(false)}>х</CloseButton>
       <ModalContent
         className={active ? "active" : ""}
         onClick={(e) => e.stopPropagation()}
