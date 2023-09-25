@@ -45,7 +45,7 @@ export const ButtonToCartFromInput = ({ product }) => {
       <StyledShoppingCartOutlined>
         <ShoppingCartOutlined
           onClick={(e) => {
-            if (product.quantity > 0){
+            if (product.quantity > 0) {
               addToCart(product);
               toast.success("Product added to cart", {
                 position: "bottom-right",
