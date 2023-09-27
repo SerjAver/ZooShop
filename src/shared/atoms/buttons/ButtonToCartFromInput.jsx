@@ -4,6 +4,7 @@ import { ShoppingCartOutlined } from "@ant-design/icons";
 //style
 import styled from "styled-components";
 import { useHandleCart } from "hooks";
+import { toast } from "react-toastify";
 
 const StyledShoppingCartOutlined = styled.button`
   position: relative;
@@ -44,9 +45,22 @@ export const ButtonToCartFromInput = ({ product }) => {
       <StyledShoppingCartOutlined>
         <ShoppingCartOutlined
           onClick={(e) => {
+            if (product.quantity > 0) {
+              addToCart(product);
+              toast.success("Product added to cart", {
+                position: "bottom-right",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+                height: "50px",
+              });
+            }
             e.stopPropagation();
             e.preventDefault();
-            addToCart(product);
           }}
         />
       </StyledShoppingCartOutlined>
