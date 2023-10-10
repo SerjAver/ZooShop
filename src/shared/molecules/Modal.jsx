@@ -1,12 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { toast } from "react-toastify";
 import * as yup from "yup";
 import { Formik } from "formik";
 // Styles
 import styled from "styled-components";
 import "react-toastify/dist/ReactToastify.css";
-
-
 
 const Modal = styled.div`
   height: 100vh;
@@ -150,7 +148,6 @@ const CloseButton = styled.button`
   }
 `;
 export const ModalWindow = ({ active, setActive }) => {
-
   const phoneRegExp = /^[0-9]{10}$/;
   const validationsSchema = yup.object().shape({
     name: yup.string().typeError("there should be a line here").required("*"),
@@ -313,4 +310,3 @@ export const ModalWindow = ({ active, setActive }) => {
     </Modal>
   );
 };
-

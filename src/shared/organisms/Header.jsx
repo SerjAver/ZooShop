@@ -1,6 +1,7 @@
 import React from "react";
 // Components
 import { ContactsButton, ShoppingCartButton, InputSearch, Logo } from "shared";
+
 // Styles
 import styled from "styled-components";
 
